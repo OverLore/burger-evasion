@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	word-break: break-word;
+}
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	font-family: 'Arial', sans-serif;
+}
+
+:root {
+	--primary: #dce35b;
+	--primary-variant: #45b649;
+
+	--secondary: #101010;
+	--secondary-variant: #202020;
+}
