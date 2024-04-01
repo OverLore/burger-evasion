@@ -11,8 +11,14 @@
 		<div>
 			<ul class="link-list">
 				<li><a href="/about">À propos</a></li>
+				<li><a href="/menu">Menu</a></li>
 				<li><a href="/services">Services</a></li>
 				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul class="link-list">
+				<li><a class="btn" href="/map">Nous trouver</a></li>
 			</ul>
 		</div>
 	</div>
@@ -92,7 +98,26 @@
 	}
 
 	.link-list a {
-		color: white;
+		color: rgb(234, 234, 234);
 		text-decoration: none;
+	}
+
+	.btn {
+		font-weight: 500;
+		color: white;
+		padding: 0.5rem 2rem;
+		border: none;
+		cursor: pointer;
+		font-size: 1.25rem;
+		transition: all 0.3s ease-in-out;
+		border: solid 2px transparent;
+		border-radius: 10px;
+		background-origin: border-box;
+		margin-top: 3rem;
+		background-image: linear-gradient(to right, var(--primary), var(--primary-variant));
+	}
+
+	.btn:hover {
+		box-shadow: 0 0 20px 5px rgba(249, 146, 43, 0.5);
 	}
 </style>
