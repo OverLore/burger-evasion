@@ -1,6 +1,6 @@
 <main>
 	<div class="main-container">
-		<section class="main-section">
+		<section class="main-section deep-1">
 			<img class="main-section-background" src="section1burger.webp" alt="" />
 			<div class="main-text-grid">
 				<div>
@@ -14,7 +14,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="chicken-burger-section">
+		<section class="chicken-burger-section deep-1">
 			<img class="chicken-burger-image" src="chicken.webp" alt="" />
 			<div class="main-text-grid">
 				<div>
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="beef-burger-section">
+		<section class="beef-burger-section deep-1">
 			<img class="beef-burger-image" src="beef.webp" alt="" />
 			<div class="main-text-grid">
 				<div class="revert-grid">
@@ -43,7 +43,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="black-burger-section">
+		<section class="black-burger-section deep-1">
 			<img class="black-burger-image" src="black.webp" alt="" />
 			<div class="main-text-grid">
 				<div>
@@ -64,12 +64,19 @@
 
 <style>
 	.main-container {
-		height: 100%;
-		margin-inline: 10rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 2rem;
+		overflow: hidden;
+	}
+
+	.deep-1 {
+		max-width: 100rem;
+		padding-inline: 5rem;
 	}
 
 	.main-section {
-		width: 100vw;
 		height: 100svh;
 	}
 
