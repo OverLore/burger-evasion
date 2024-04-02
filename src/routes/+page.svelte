@@ -1,3 +1,38 @@
+<script>
+	import GoogleReview from '../components/GoogleReview.svelte';
+
+	const reviews = [
+		{
+			author: 'Clément Lochet',
+			picture: 'https://randomuser.me/api/portraits/men/45.jpg',
+			date: '27/03/2024',
+			stars: 4,
+			text: "J'ai visité Burger Evasion la semaine dernière sur recommandation d'un ami et je n'ai pas été déçu ! Les burgers sont vraiment d'un autre niveau : savoureux, juteux, et les ingrédients sont visiblement de qualité supérieure. J'ai enlevé une étoile simplement parce que l'attente était un peu longue, mais le burger en valait vraiment la peine. Je reviendrai à coup sûr !"
+		},
+		{
+			author: 'Clara Remy',
+			picture: 'https://randomuser.me/api/portraits/women/45.jpg',
+			date: '04/02/2024',
+			stars: 5,
+			text: 'Incroyable ! Meilleurs burgers testés, service rapide, équipe au top. Gros coup de cœur pour le Black Chicken, une tuerie ! Ambiance conviviale, parfait pour une soirée entre amis. Vivement la prochaine visite !'
+		},
+		{
+			author: 'Simon Cochinard',
+			picture: 'https://randomuser.me/api/portraits/men/7.jpg',
+			date: '03/02/2024',
+			stars: 4,
+			text: "Visite agréable au Burger Fantaisie avec un coup de cœur pour leur Chicken, une merveille de saveurs ! Service chaleureux, déco sympa, mais l'attente était plus longue que prévu. Malgré cela, la qualité des burgers justifie largement une petite patience. Vivement recommandé pour une expérience gourmande qui sort de l'ordinaire."
+		},
+		{
+			author: 'Sophie Garcia',
+			picture: 'https://randomuser.me/api/portraits/women/12.jpg',
+			date: '05/09/2023',
+			stars: 3,
+			text: "Burgers corrects mais rien d'extraordinaire. Le service était bien, mais l'attente était assez longue. Bien pour un déjeuner rapide."
+		}
+	];
+</script>
+
 <main>
 	<div class="main-container">
 		<section class="main-section deep-1">
@@ -57,6 +92,14 @@
 					</h3>
 					<button class="btn btn-primary">Découvrir</button>
 				</div>
+			</div>
+		</section>
+		<section class="feedback-section deep-1">
+			<h2>Votre avis compte.</h2>
+			<div class="feedback-list">
+				{#each reviews as { author, date, picture, stars, text }}
+					<GoogleReview {author} {date} {picture} {stars} {text} />
+				{/each}
 			</div>
 		</section>
 	</div>
@@ -180,5 +223,25 @@
 		height: 90vh;
 		top: 5vh;
 		left: 25vw;
+	}
+
+	.feedback-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.feedback-section h2 {
+		font-size: 5rem;
+		font-weight: 600;
+		color: rgb(234, 234, 234);
+	}
+
+	.feedback-list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		align-items: start;
+		margin-top: 3rem;
+		gap: 2rem;
 	}
 </style>
