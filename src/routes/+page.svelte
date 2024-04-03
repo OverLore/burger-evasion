@@ -102,6 +102,22 @@
 				{/each}
 			</div>
 		</section>
+		<section class="map-section deep-1">
+			<h2>Nous trouver.</h2>
+			<div class="map-container">
+				<img class="map-section-background" src="map-background.webp" alt="" />
+				<iframe
+					title="map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.8286002551963!2d2.2939582746944756!3d48.85839441372228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1712173213645!5m2!1sfr!2sfr"
+					width="800"
+					height="450"
+					style="border:0; margin:1rem"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+		</section>
 	</div>
 </main>
 
@@ -243,5 +259,38 @@
 		align-items: start;
 		margin-top: 3rem;
 		gap: 2rem;
+	}
+
+	.map-section {
+		margin-top: 3rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.map-section h2 {
+		font-size: 5rem;
+		font-weight: 600;
+		color: rgb(234, 234, 234);
+	}
+
+	.map-container {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		width: 100vw;
+	}
+
+	.map-section-background {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		object-fit: cover;
+		object-position: center;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
 	}
 </style>
