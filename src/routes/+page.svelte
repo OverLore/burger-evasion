@@ -31,6 +31,64 @@
 			text: "Burgers corrects mais rien d'extraordinaire. Le service était bien, mais l'attente était assez longue. Bien pour un déjeuner rapide."
 		}
 	];
+
+	let selectedFaqIndex = null;
+	function toggleFaqAnswer(faqIndex) {
+		const faqAnswers = document.querySelectorAll('.faq-answer');
+
+		faqAnswers.forEach((faqAnswer, index) => {
+			if (index === faqIndex) {
+				if (faqAnswer.style.height) {
+					faqAnswer.style.height = null;
+					selectedFaqIndex = null;
+				} else {
+					const scrollHeight = faqAnswer.scrollHeight;
+					faqAnswer.style.height = scrollHeight + 'px';
+					selectedFaqIndex = index;
+				}
+			} else {
+				faqAnswer.style.height = null;
+			}
+		});
+	}
+
+	const faqs = [
+		{
+			question: 'Est-il possible de venir sans avoir réservé ?',
+			answer:
+				"Il est tout à fait possible de venir sans avoir réservé ! Gardez cependant à l'esprit qu'il est possible que nous soyons complets le jour de votre visite. Il est donc tout de même conseillé de réserver à l'avance."
+		},
+		{
+			question: "J'ai l'impression que ce restaurant n'existe pas. C'est une arnaque ?",
+			answer:
+				"Pas du tout ! Cependant, effectivement, Burger Evasion n'existe pas (du moins ce site n'est pas là pour le promouvoir). Vous êtes ici sur un site de démonstration créé par Luc Arnould. Je suis un développeur fullstack freelance et ce site fait partie de mes réalisations personnelles. Les images et logos ont été généré via Dall-E puis édités sur Photopea."
+		},
+		{
+			question: "J'ai oublié un effet personnel, je peux le récupérer ?",
+			answer:
+				"Si par chance votre bien a été rapporté à la direction, vous pouvez venir le rechercher directement au restaurant pendant les heures d'ouverture."
+		},
+		{
+			question: 'Faîtes vous des évènements (anniversaires, team buildings, ...) ?',
+			answer:
+				"En pratique, c'est possible ! Il vous suffit simplement de nous appeler au préalable pour parler de votre projet puis nous verrons ce que nous pouvons faire. Un gâteau-burger avec une bougie, y'a de l'idée non ?"
+		},
+		{
+			question:
+				'Votre établissement est-il accessible pour les personnes à mobilité réduite (PMR) ?',
+			answer:
+				'Évidemment ! Chez nous, pas de discrimination, tout le monde est le.la bienvenu.e et peut venir se régaler en toute tranquilité ! :)'
+		},
+		{
+			question: 'Vos viandes sont-elles Halal ?',
+			answer: 'Toutes nos viandes sont Halal et accessibles à tous.'
+		},
+		{
+			question: 'Vos burgers sont-ils faits-maison ?',
+			answer:
+				"Oui. Nous travaillons activement à vous fournir un repas de la plus pure qualité qu'il soit. Nos pains buns sont des pains boulanger faits par un artisan local le matin-même. Nos viandes sont d'origine française et nos légumes proviennent également de producteurs locaux. Soyez certains de ne manger que du frais chez nous !"
+		}
+	];
 </script>
 
 <main>
@@ -102,20 +160,51 @@
 				{/each}
 			</div>
 		</section>
-		<section class="map-section deep-1">
-			<h2>Nous trouver.</h2>
-			<div class="map-container">
-				<img class="map-section-background" src="map-background.webp" alt="" />
-				<iframe
-					title="map"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.8286002551963!2d2.2939582746944756!3d48.85839441372228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1712173213645!5m2!1sfr!2sfr"
-					width="800"
-					height="450"
-					style="border:0; margin:1rem"
-					allowfullscreen=""
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"
-				></iframe>
+		<section style="width: 100%; position: relative; margin-top: 3rem">
+			<img class="map-section-background" src="map-background.webp" alt="" />
+			<div class="map-section deep-1">
+				<h2>Nous trouver.</h2>
+				<div class="map-container">
+					<iframe
+						title="map"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.8286002551963!2d2.2939582746944756!3d48.85839441372228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1712173213645!5m2!1sfr!2sfr"
+						width="800"
+						height="450"
+						style="border:0; margin:1rem"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="faq-section">
+			<div class="faq-container deep-1">
+				<div class="faq-title">
+					<h2>Les questions fréquentes</h2>
+					<p>
+						Vous-vous posez des questions quant à notre établissement ? C'est normal ! Et il est
+						d'ailleurs probable que d'autres avant vous aient eu les même interrogations.
+					</p>
+					<p>
+						Vous trouverez peut-être dans la section suivante une ou plusieurs réponses. Si vous ne
+						trouvez pas votre bonheur vous pouvez toujours nous les poser directement !
+					</p>
+					<button class="btn btn-primary">Nous contacter</button>
+				</div>
+				<ul class="faq-list">
+					{#each faqs as faq, index}
+						<li class="faq-accordion on">
+							<div class="faq-question" on:click={() => toggleFaqAnswer(index)}>
+								<h3 style={selectedFaqIndex === index ? 'color: white;' : ''}>{faq.question}</h3>
+								<p>+</p>
+							</div>
+							<div class="faq-answer">
+								<p>{faq.answer}</p>
+							</div>
+						</li>
+					{/each}
+				</ul>
 			</div>
 		</section>
 	</div>
@@ -245,6 +334,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		background-image: url(back-bugir.png);
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: auto 75%;
 	}
 
 	.feedback-section h2 {
@@ -262,7 +355,9 @@
 	}
 
 	.map-section {
-		margin-top: 3rem;
+		position: relative;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -292,5 +387,85 @@
 		z-index: -1;
 		width: 100%;
 		height: 100%;
+	}
+
+	.faq-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-image: url(back-bugir.png);
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: auto 75%;
+	}
+
+	.faq-title {
+	}
+
+	.faq-title h2 {
+		font-size: 5rem;
+		font-weight: 600;
+		color: rgb(234, 234, 234);
+	}
+
+	.faq-title p {
+		font-size: 1rem;
+		color: rgb(234, 234, 234);
+		margin-top: 1.5rem;
+	}
+
+	.faq-container {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		grid-column-gap: 5rem;
+		grid-row-gap: 4rem;
+		grid-template-rows: auto;
+		grid-template-columns: 0.75fr 1fr;
+		grid-auto-columns: 1fr;
+		align-items: start;
+		display: grid;
+	}
+
+	.faq-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.faq-accordion {
+		display: flex;
+		flex-direction: column;
+		color: white;
+	}
+
+	.faq-question {
+		cursor: pointer;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		display: flex;
+	}
+
+	.faq-answer {
+		overflow: hidden;
+		height: 0;
+		width: 100%;
+		transition: height 0.3s ease-in-out;
+	}
+
+	.faq-question h3 {
+		color: rgb(190, 190, 190);
+		font-size: 1.5rem;
+		transition: color 0.3s ease-in-out;
+	}
+
+	.faq-question p {
+		color: rgb(190, 190, 190);
+		font-size: 1.5rem;
+	}
+
+	.faq-answer p {
+		color: rgb(190, 190, 190);
+		font-size: 1rem;
 	}
 </style>
