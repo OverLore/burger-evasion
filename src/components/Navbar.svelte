@@ -1,6 +1,21 @@
-<script></script>
+<script>
+	import { onMount } from 'svelte';
 
-<nav aria-label="Main navigation">
+	let opacity = 0;
+
+	const onScroll = () => {
+		opacity = Math.min(0.85, window.scrollY / 250);
+	};
+
+	onMount(() => {
+		onScroll();
+		window.addEventListener('scroll', onScroll);
+
+		return () => window.removeEventListener('scroll', onScroll);
+	});
+</script>
+
+<nav aria-label="Main navigation" style="background-color: rgba(10, 10, 10, {opacity});">
 	<div class="main-container">
 		<div class="title-container">
 			<a href="/" class="title-link">
@@ -34,12 +49,13 @@
 		left: 0;
 		right: 0;
 		z-index: 1000;
+		backdrop-filter: blur(5px);
 	}
 
 	.main-container {
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-end;
+		align-items: center;
 		width: 100%;
 		height: 100%;
 		margin-inline: 10rem;

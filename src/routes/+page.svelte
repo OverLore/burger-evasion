@@ -1,5 +1,6 @@
 <script>
 	import GoogleReview from '../components/GoogleReview.svelte';
+	import ParallaxImage from '../components/ParallaxImage.svelte';
 
 	const reviews = [
 		{
@@ -94,7 +95,7 @@
 <main>
 	<div class="main-container">
 		<section class="main-section deep-1">
-			<img class="main-section-background" src="section1burger.webp" alt="" />
+			<ParallaxImage src="section1burger.webp" containerSelector=".main-section" />
 			<div class="main-text-grid">
 				<div>
 					<h2>Goûtez les meilleurs burgers de votre vie.</h2>
@@ -110,7 +111,7 @@
 		<section class="chicken-burger-section deep-1">
 			<img class="chicken-burger-image" src="chicken.webp" alt="" />
 			<div class="main-text-grid">
-				<div>
+				<div class="burger-description">
 					<h2>Le Chicken.</h2>
 					<h3>
 						Dégustez un morceau de poulet pané généreux, bordé de deux buns toastés, agrémenté de
@@ -124,7 +125,7 @@
 		<section class="beef-burger-section deep-1">
 			<img class="beef-burger-image" src="beef.webp" alt="" />
 			<div class="main-text-grid">
-				<div class="revert-grid">
+				<div class="revert-grid burger-description">
 					<h2>Le Carnivore.</h2>
 					<h3>
 						Savourez un steak juteux à souhait, niché entre deux buns parfaitement toastés,
@@ -139,7 +140,7 @@
 		<section class="black-burger-section deep-1">
 			<img class="black-burger-image" src="black.webp" alt="" />
 			<div class="main-text-grid">
-				<div>
+				<div class="burger-description">
 					<h2>La gamme Black.</h2>
 					<h3>
 						Plongez dans l'univers de notre gamme Black avec deux créations audacieuses, où le noir
@@ -194,16 +195,94 @@
 				</div>
 				<ul class="faq-list">
 					{#each faqs as faq, index}
-						<li class="faq-accordion on">
-							<div class="faq-question" on:click={() => toggleFaqAnswer(index)}>
+						<li class="faq-accordion">
+							<button class="faq-question" on:click={() => toggleFaqAnswer(index)}>
 								<h3 style={selectedFaqIndex === index ? 'color: white;' : ''}>{faq.question}</h3>
 								<p>+</p>
-							</div>
+							</button>
 							<div class="faq-answer">
 								<p>{faq.answer}</p>
 							</div>
 						</li>
 					{/each}
+				</ul>
+			</div>
+		</section>
+		<section class="newsletter-section">
+			<ParallaxImage src="faq-background.webp" containerSelector=".newsletter-section" />
+			<div class="newsletter-container deep-2">
+				<h2>Nos actus vous intéressent ?</h2>
+				<div>
+					<h3>
+						En renseignant votre mail vous recevrez les actus de l'établissement. (Offres,
+						évènements, etc...)
+					</h3>
+				</div>
+				<form class="newsletter-mail-container">
+					<input
+						class="email-field"
+						type="email"
+						name="Email"
+						id="email"
+						placeholder="Votre adresse mail"
+						required
+					/>
+					<input class="email-submit" type="submit" value="S'inscrire" />
+				</form>
+				<p>On vous le garantit, on ne vous spammera pas.</p>
+				<div>
+					<h3 style="margin-top: 3rem;">Il y a nos réseaux aussi !</h3>
+				</div>
+				<ul class="social-list">
+					<li>
+						<a class="social" href="#">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i class="ri-facebook-fill" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a class="social" href="https://www.instagram.com/lucarnould/" target="_blank">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i class="ri-instagram-line" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a class="social" href="https://www.tiktok.com/@_scottii/" target="_blank">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i class="ri-tiktok-fill" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a class="social" href="https://www.linkedin.com/in/luc-arnould/" target="_blank">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i class="ri-linkedin-fill" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a
+							class="social"
+							href="https://www.youtube.com/channel/UCYaQhULOHO684SKERsnf9nw"
+							target="_blank"
+						>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<i class="ri-youtube-fill" aria-hidden="true"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</section>
@@ -215,13 +294,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 2rem;
 		overflow: hidden;
-	}
-
-	.deep-1 {
-		max-width: 100rem;
-		padding-inline: 5rem;
 	}
 
 	.main-section {
@@ -289,6 +362,13 @@
 		background-image: linear-gradient(#1e1e22, #1e1e22),
 			linear-gradient(to right, var(--primary), var(--primary-variant));
 		background-clip: padding-box, border-box;
+	}
+
+	.burger-description {
+		background-image: url(back-bugir.png);
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: auto 75%;
 	}
 
 	.chicken-burger-section {
@@ -399,9 +479,6 @@
 		background-size: auto 75%;
 	}
 
-	.faq-title {
-	}
-
 	.faq-title h2 {
 		font-size: 5rem;
 		font-weight: 600;
@@ -434,16 +511,20 @@
 	.faq-accordion {
 		display: flex;
 		flex-direction: column;
-		color: white;
+		color: rgb(234, 234, 234);
 	}
 
 	.faq-question {
 		cursor: pointer;
 		justify-content: space-between;
 		align-items: flex-start;
+		display: flex;
+		background-color: transparent;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
-		display: flex;
+		border: 0;
+		padding-inline: 0;
+		text-align: start;
 	}
 
 	.faq-answer {
@@ -467,5 +548,200 @@
 	.faq-answer p {
 		color: rgb(190, 190, 190);
 		font-size: 1rem;
+	}
+
+	.newsletter-section-background {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		object-fit: cover;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		transition: object-position 0.1s;
+	}
+
+	.newsletter-section {
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.newsletter-container {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.newsletter-container h2 {
+		font-size: 5rem;
+		font-weight: 600;
+		color: rgb(234, 234, 234);
+		text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.62);
+	}
+
+	.newsletter-container h3 {
+		font-size: 2rem;
+		color: rgb(234, 234, 234);
+		text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.62);
+		margin-top: 1.5rem;
+	}
+
+	.newsletter-container p {
+		font-size: 0.75rem;
+		color: rgb(255, 212, 185);
+		text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.62);
+	}
+
+	.newsletter-mail-container {
+		display: grid;
+		grid-column-gap: 1rem;
+		grid-row-gap: 1rem;
+		grid-template-rows: auto;
+		grid-template-columns: 1fr max-content;
+		grid-auto-columns: 1fr;
+		margin-top: 4rem;
+		width: 100%;
+	}
+
+	.email-field {
+		background-color: white;
+		color: black;
+		border: 3px solid transparent;
+		border-radius: 0.4rem;
+		margin-bottom: 0.75rem;
+		padding: 1rem 1rem;
+		font-size: 1rem;
+		transition: 0.3s;
+		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.82);
+	}
+
+	.email-field:hover {
+		border: 3px solid black;
+	}
+
+	.email-submit {
+		background-image: linear-gradient(
+			45deg,
+			rgb(37, 37, 37) 0%,
+			rgb(15, 15, 15) 45%,
+			rgb(182, 182, 182) 50%,
+			rgb(15, 15, 15) 55%,
+			rgb(37, 37, 37) 100%
+		);
+		background-size: 280% auto;
+		color: white;
+		border: 0;
+		border-radius: 0.4rem;
+		margin-bottom: 0.75rem;
+		padding: 1rem 1rem;
+		font-size: 1rem;
+		cursor: pointer;
+		transition: 0.5s;
+		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.82);
+	}
+
+	.email-submit:hover {
+		background-position: right center;
+	}
+
+	.social-list {
+		display: flex;
+		margin-top: 1.5rem;
+	}
+
+	.social-list li {
+		list-style: none;
+	}
+
+	.social-list li a {
+		display: block;
+		position: relative;
+		width: 4rem;
+		height: 4rem;
+		line-height: 4rem;
+		font-size: 2.5rem;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		margin: 0 30px;
+		transition: 0.5s;
+	}
+
+	.social-list li a span {
+		position: absolute;
+		transition: transform 0.5s;
+		box-shadow: 0px 0px 15px rgb(0, 0, 0);
+	}
+
+	.social-list li a span:nth-child(1),
+	.social-list li a span:nth-child(3) {
+		width: 100%;
+		height: 3px;
+		background: white;
+	}
+	.social-list li a span:nth-child(1) {
+		top: 0;
+		left: 0;
+		transform-origin: right;
+	}
+	.social-list li a:hover span:nth-child(1) {
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.5s;
+	}
+
+	.social-list li a span:nth-child(3) {
+		bottom: 0;
+		left: 0;
+		transform-origin: left;
+	}
+	.social-list li a:hover span:nth-child(3) {
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.5s;
+	}
+
+	.social-list li a span:nth-child(2),
+	.social-list li a span:nth-child(4) {
+		width: 3px;
+		height: 100%;
+		background: white;
+	}
+	.social-list li a span:nth-child(2) {
+		top: 0;
+		left: 0;
+		transform: scale(0);
+		transform-origin: bottom;
+	}
+	.social-list li a:hover span:nth-child(2) {
+		transform: scale(1);
+		transform-origin: top;
+		transition: transform 0.5s;
+	}
+	.social-list li a span:nth-child(4) {
+		top: 0;
+		right: 0;
+		transform: scale(0);
+		transform-origin: top;
+	}
+	.social-list li a:hover span:nth-child(4) {
+		transform: scale(1);
+		transform-origin: bottom;
+		transition: transform 0.5s;
+	}
+
+	.social-list .social:hover {
+		color: black;
+	}
+	.social-list .social:hover span {
+		background: black;
 	}
 </style>

@@ -95,3 +95,13 @@ body {
 	font-weight: 900;
 	font-style: italic;
 }
+
+.deep-1 {
+	max-width: 100rem;
+	padding-inline: 5rem;
+}
+
+.deep-2 {
+	max-width: 65rem;
+	padding-inline: 5rem;
+}
