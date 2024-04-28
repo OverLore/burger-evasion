@@ -95,7 +95,7 @@
 <main>
 	<div class="main-container">
 		<section class="main-section deep-1">
-			<ParallaxImage src="section1burger.webp" containerSelector=".main-section" />
+			<img src="section1burger.webp" alt="Parallax background" />
 			<div class="main-text-grid">
 				<div>
 					<h2>Goûtez les meilleurs burgers de votre vie.</h2>
@@ -103,189 +103,194 @@
 						Découvrez des burgers révolutionnaires, avec leur viande juteuse et succulente. Goûtez à
 						notre redéfinition de ce classique culinaire d'une manière inédite et inoubliable.
 					</h3>
-					<button class="btn btn-primary"> Menu </button>
+					<button class="btn btn-primary"> Consulter la carte </button>
 					<button class="btn btn-secondary" style="margin-left: 1rem;"> Nous trouver </button>
 				</div>
 			</div>
 		</section>
-		<section class="chicken-burger-section deep-1">
-			<img class="chicken-burger-image" src="chicken.webp" alt="" />
-			<div class="main-text-grid">
-				<div class="burger-description">
-					<h2>Le Chicken.</h2>
-					<h3>
-						Dégustez un morceau de poulet pané généreux, bordé de deux buns toastés, agrémenté de
-						tomates fraîches, d'oignons rouges caramélisés, cornichons, salade croquante et cheddar
-						fondant. <br />Un délice compact en saveurs !
-					</h3>
-					<button class="btn btn-primary">Découvrir</button>
+		<div class="content">
+			<section class="chicken-burger-section deep-1">
+				<img class="chicken-burger-image" src="chicken.webp" alt="" />
+				<div class="main-text-grid">
+					<div class="burger-description" style="z-index: 1;">
+						<h2>Le Chicken.</h2>
+						<h3>
+							Dégustez un morceau de poulet pané généreux, bordé de deux buns toastés, agrémenté de
+							tomates fraîches, d'oignons rouges caramélisés, cornichons, salade croquante et
+							cheddar fondant. <br />Un délice compact en saveurs !
+						</h3>
+						<button class="btn btn-primary">Découvrir</button>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section class="beef-burger-section deep-1">
-			<img class="beef-burger-image" src="beef.webp" alt="" />
-			<div class="main-text-grid">
-				<div class="revert-grid burger-description">
-					<h2>Le Carnivore.</h2>
-					<h3>
-						Savourez un steak juteux à souhait, niché entre deux buns parfaitement toastés,
-						accompagné de tomates fraîches, d'oignons rouges doucement caramélisés, de cornichons
-						croquants, de salade fraîche et d'une tranche de cheddar onctueux et fondant. <br />Un
-						régal réservé aux vrais carnivores !
-					</h3>
-					<button class="btn btn-primary">Découvrir</button>
+			</section>
+			<section class="beef-burger-section deep-1">
+				<img class="beef-burger-image" src="beef.webp" alt="" />
+				<div class="main-text-grid">
+					<div class="revert-grid burger-description" style="z-index: 1;">
+						<h2>Le Carnivore.</h2>
+						<h3>
+							Savourez un steak juteux à souhait, niché entre deux buns parfaitement toastés,
+							accompagné de tomates fraîches, d'oignons rouges doucement caramélisés, de cornichons
+							croquants, de salade fraîche et d'une tranche de cheddar onctueux et fondant. <br />Un
+							régal réservé aux vrais carnivores !
+						</h3>
+						<button class="btn btn-primary">Découvrir</button>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section class="black-burger-section deep-1">
-			<img class="black-burger-image" src="black.webp" alt="" />
-			<div class="main-text-grid">
-				<div class="burger-description">
-					<h2>La gamme Black.</h2>
-					<h3>
-						Plongez dans l'univers de notre gamme Black avec deux créations audacieuses, où le noir
-						élégant du pain encadre parfaitement la richesse des saveurs. Chaque bouchée de nos
-						burgers Black vous transporte dans une dimension offrant une harmonie parfaite entre
-						texture, arôme, et visuel.<br />Bienvenue dans un monde où le noir révèle les saveurs
-						les plus intenses.
-					</h3>
-					<button class="btn btn-primary">Découvrir</button>
+			</section>
+			<section class="black-burger-section deep-1">
+				<img class="black-burger-image" src="black.webp" alt="" />
+				<div class="main-text-grid">
+					<div class="burger-description" style="z-index: 1;">
+						<h2>La gamme Black.</h2>
+						<h3>
+							Plongez dans l'univers de notre gamme Black avec deux créations audacieuses, où le
+							noir élégant du pain encadre parfaitement la richesse des saveurs. Chaque bouchée de
+							nos burgers Black vous transporte dans une dimension offrant une harmonie parfaite
+							entre texture, arôme, et visuel.<br />Bienvenue dans un monde où le noir révèle les
+							saveurs les plus intenses.
+						</h3>
+						<button class="btn btn-primary">Découvrir</button>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section class="feedback-section deep-1">
-			<h2>Votre avis compte.</h2>
-			<div class="feedback-list">
-				{#each reviews as { author, date, picture, stars, text }}
-					<GoogleReview {author} {date} {picture} {stars} {text} />
-				{/each}
-			</div>
-		</section>
-		<section style="width: 100%; position: relative; margin-top: 3rem">
-			<img class="map-section-background" src="map-background.webp" alt="" />
-			<div class="map-section deep-1">
-				<h2>Nous trouver.</h2>
-				<div class="map-container">
-					<iframe
-						title="map"
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.8286002551963!2d2.2939582746944756!3d48.85839441372228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1712173213645!5m2!1sfr!2sfr"
-						width="800"
-						height="450"
-						style="border:0; margin:1rem"
-						allowfullscreen=""
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"
-					></iframe>
-				</div>
-			</div>
-		</section>
-		<section class="faq-section">
-			<div class="faq-container deep-1">
-				<div class="faq-title">
-					<h2>Les questions fréquentes</h2>
-					<p>
-						Vous-vous posez des questions quant à notre établissement ? C'est normal ! Et il est
-						d'ailleurs probable que d'autres avant vous aient eu les même interrogations.
-					</p>
-					<p>
-						Vous trouverez peut-être dans la section suivante une ou plusieurs réponses. Si vous ne
-						trouvez pas votre bonheur vous pouvez toujours nous les poser directement !
-					</p>
-					<button class="btn btn-primary">Nous contacter</button>
-				</div>
-				<ul class="faq-list">
-					{#each faqs as faq, index}
-						<li class="faq-accordion">
-							<button class="faq-question" on:click={() => toggleFaqAnswer(index)}>
-								<h3 style={selectedFaqIndex === index ? 'color: white;' : ''}>{faq.question}</h3>
-								<p>+</p>
-							</button>
-							<div class="faq-answer">
-								<p>{faq.answer}</p>
-							</div>
-						</li>
+			</section>
+			<section class="feedback-section deep-1">
+				<h2>Votre avis compte.</h2>
+				<div class="feedback-list">
+					{#each reviews as { author, date, picture, stars, text }}
+						<GoogleReview {author} {date} {picture} {stars} {text} />
 					{/each}
-				</ul>
-			</div>
-		</section>
-		<section class="newsletter-section">
-			<ParallaxImage src="faq-background.webp" containerSelector=".newsletter-section" />
-			<div class="newsletter-container deep-2">
-				<h2>Nos actus vous intéressent ?</h2>
-				<div>
-					<h3>
-						En renseignant votre mail vous recevrez les actus de l'établissement. (Offres,
-						évènements, etc...)
-					</h3>
 				</div>
-				<form class="newsletter-mail-container">
-					<input
-						class="email-field"
-						type="email"
-						name="Email"
-						id="email"
-						placeholder="Votre adresse mail"
-						required
-					/>
-					<input class="email-submit" type="submit" value="S'inscrire" />
-				</form>
-				<p>On vous le garantit, on ne vous spammera pas.</p>
-				<div>
-					<h3 style="margin-top: 3rem;">Il y a nos réseaux aussi !</h3>
+			</section>
+			<section
+				style="width: 100%; position: relative; display: flex; justify-content: center;"
+				id="map"
+			>
+				<img class="map-section-background" src="map-background.webp" alt="" />
+				<div class="map-section deep-1">
+					<h2>Nous trouver.</h2>
+					<div class="map-container">
+						<iframe
+							title="map"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1560.8286002551963!2d2.2939582746944756!3d48.85839441372228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1712173213645!5m2!1sfr!2sfr"
+							width="800"
+							height="450"
+							style="border:0; margin:1rem"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
 				</div>
-				<ul class="social-list">
-					<li>
-						<a class="social" href="#">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							<i class="ri-facebook-fill" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a class="social" href="https://www.instagram.com/lucarnould/" target="_blank">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							<i class="ri-instagram-line" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a class="social" href="https://www.tiktok.com/@_scottii/" target="_blank">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							<i class="ri-tiktok-fill" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a class="social" href="https://www.linkedin.com/in/luc-arnould/" target="_blank">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							<i class="ri-linkedin-fill" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a
-							class="social"
-							href="https://www.youtube.com/channel/UCYaQhULOHO684SKERsnf9nw"
-							target="_blank"
-						>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
-							<i class="ri-youtube-fill" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</section>
+			</section>
+			<section class="faq-section" id="faq">
+				<div class="faq-container deep-1">
+					<div class="faq-title">
+						<h2>Les questions fréquentes.</h2>
+						<p>
+							Vous-vous posez des questions quant à notre établissement ? C'est normal ! Et il est
+							d'ailleurs probable que d'autres avant vous aient eu les même interrogations.
+						</p>
+						<p>
+							Vous trouverez peut-être dans la section suivante une ou plusieurs réponses. Si vous
+							ne trouvez pas votre bonheur vous pouvez toujours nous les poser directement !
+						</p>
+						<button class="btn btn-primary">Nous contacter</button>
+					</div>
+					<ul class="faq-list">
+						{#each faqs as faq, index}
+							<li class="faq-accordion">
+								<button class="faq-question" on:click={() => toggleFaqAnswer(index)}>
+									<h3 style={selectedFaqIndex === index ? 'color: white;' : ''}>{faq.question}</h3>
+									<p>+</p>
+								</button>
+								<div class="faq-answer">
+									<p>{faq.answer}</p>
+								</div>
+							</li>
+						{/each}
+					</ul>
+				</div>
+			</section>
+			<section class="newsletter-section">
+				<ParallaxImage src="faq-background.webp" containerSelector=".newsletter-section" />
+				<div class="newsletter-container deep-2">
+					<h2>Nos actus vous intéressent ?</h2>
+					<div>
+						<h3>
+							En renseignant votre mail vous recevrez les actus de l'établissement. (Offres,
+							évènements, etc...)
+						</h3>
+					</div>
+					<form class="newsletter-mail-container">
+						<input
+							class="email-field"
+							type="email"
+							name="Email"
+							id="email"
+							placeholder="Votre adresse mail"
+							required
+						/>
+						<input class="email-submit" type="submit" value="S'inscrire" />
+					</form>
+					<p>On vous le garantit, on ne vous spammera pas.</p>
+					<div>
+						<h3 style="margin-top: 3rem;">Suivez-nous sur les réseaux.</h3>
+					</div>
+					<ul class="social-list">
+						<li>
+							<a class="social" href="#">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="ri-facebook-fill" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a class="social" href="https://www.instagram.com/lucarnould/" target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="ri-instagram-line" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a class="social" href="https://www.tiktok.com/@_scottii/" target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="ri-tiktok-fill" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a class="social" href="https://www.linkedin.com/in/luc-arnould/" target="_blank">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="ri-linkedin-fill" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								class="social"
+								href="https://www.youtube.com/channel/UCYaQhULOHO684SKERsnf9nw"
+								target="_blank"
+							>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<i class="ri-youtube-fill" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
 	</div>
 </main>
 
@@ -297,18 +302,30 @@
 		overflow: hidden;
 	}
 
-	.main-section {
-		height: 100svh;
+	.content {
+		background-color: var(--secondary);
+		margin-top: 100svh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: -2;
 	}
 
-	.main-section-background {
-		position: absolute;
-		z-index: -1;
-		width: 100%;
-		height: 100%;
+	.main-section {
+		position: fixed;
+		height: 100svh;
+		z-index: -2;
+	}
+
+	.main-section img {
+		position: fixed;
 		top: 0;
 		left: 0;
+		width: 100vw;
+		height: 100svh;
 		object-fit: cover;
+		z-index: -1;
 	}
 
 	.main-text-grid {
@@ -325,20 +342,21 @@
 	}
 
 	.main-text-grid h2 {
-		font-size: 5rem;
+		font-size: 4.25rem;
 		font-weight: 600;
+		text-transform: uppercase;
 	}
 
 	.main-text-grid h3 {
 		margin-top: 2rem;
 		font-weight: 500;
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 
 	.btn {
 		font-weight: 500;
 		color: white;
-		padding: 20px 60px;
+		padding: 15px 45px;
 		border: none;
 		cursor: pointer;
 		font-size: 1.5rem;
@@ -355,6 +373,7 @@
 
 	.btn-primary {
 		background-image: linear-gradient(to right, var(--primary), var(--primary-variant));
+		font-weight: bold;
 	}
 
 	.btn-secondary {
@@ -378,7 +397,6 @@
 
 	.chicken-burger-image {
 		position: absolute;
-		z-index: -1;
 		height: 90vh;
 		top: 5vh;
 		left: 25vw;
@@ -391,7 +409,6 @@
 
 	.beef-burger-image {
 		position: absolute;
-		z-index: -1;
 		height: 90vh;
 		top: 5vh;
 		right: 25vw;
@@ -404,7 +421,6 @@
 
 	.black-burger-image {
 		position: absolute;
-		z-index: -1;
 		height: 90vh;
 		top: 5vh;
 		left: 25vw;
@@ -431,6 +447,7 @@
 		grid-template-columns: repeat(4, 1fr);
 		align-items: start;
 		margin-top: 3rem;
+		margin-bottom: 3rem;
 		gap: 2rem;
 	}
 
@@ -480,6 +497,7 @@
 	}
 
 	.faq-title h2 {
+		font-family: var(--ulagadi-bold);
 		font-size: 5rem;
 		font-weight: 600;
 		color: rgb(234, 234, 234);
@@ -581,7 +599,7 @@
 	}
 
 	.newsletter-container h2 {
-		font-size: 5rem;
+		font-size: 4.25rem;
 		font-weight: 600;
 		color: rgb(234, 234, 234);
 		text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.62);
@@ -736,12 +754,5 @@
 		transform: scale(1);
 		transform-origin: bottom;
 		transition: transform 0.5s;
-	}
-
-	.social-list .social:hover {
-		color: black;
-	}
-	.social-list .social:hover span {
-		background: black;
 	}
 </style>
