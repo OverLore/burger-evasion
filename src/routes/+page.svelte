@@ -113,7 +113,7 @@
 				<img class="chicken-burger-image" src="chicken.webp" alt="" />
 				<div class="main-text-grid">
 					<div class="burger-description" style="z-index: 1;">
-						<h2>Le Chicken.</h2>
+						<h2 class="chicken">Le Chicken.</h2>
 						<h3>
 							Dégustez un morceau de poulet pané généreux, bordé de deux buns toastés, agrémenté de
 							tomates fraîches, d'oignons rouges caramélisés, cornichons, salade croquante et
@@ -127,7 +127,7 @@
 				<img class="beef-burger-image" src="beef.webp" alt="" />
 				<div class="main-text-grid">
 					<div class="revert-grid burger-description" style="z-index: 1;">
-						<h2>Le Carnivore.</h2>
+						<h2 class="beef">Le Carnivore.</h2>
 						<h3>
 							Savourez un steak juteux à souhait, niché entre deux buns parfaitement toastés,
 							accompagné de tomates fraîches, d'oignons rouges doucement caramélisés, de cornichons
@@ -339,12 +339,48 @@
 	.revert-grid {
 		grid-column: 2;
 		text-align: right;
+		display: flex;
+		flex-direction: column;
+		align-items: end;
 	}
 
 	.main-text-grid h2 {
 		font-size: 4.25rem;
 		font-weight: 600;
 		text-transform: uppercase;
+	}
+
+	.chicken {
+		font-size: 4.25rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+		width: fit-content;
+	}
+
+	.chicken::after {
+		content: url(chickenicon.webp);
+		position: absolute;
+		top: -2.4rem;
+		left: auto;
+		bottom: auto;
+		right: -1.25rem;
+	}
+
+	.beef {
+		font-size: 4.25rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+		width: fit-content;
+	}
+
+	.beef::before {
+		content: url(beeficon.webp);
+		position: absolute;
+		top: -2.4rem;
+		left: -2.5rem;
+		bottom: auto;
 	}
 
 	.main-text-grid h3 {
