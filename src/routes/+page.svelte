@@ -359,7 +359,7 @@
 	}
 
 	.chicken::after {
-		content: url(chickenicon.webp);
+		content: url(/chickenicon.webp);
 		position: absolute;
 		top: -2.4rem;
 		left: auto;
@@ -376,7 +376,7 @@
 	}
 
 	.beef::before {
-		content: url(beeficon.webp);
+		content: url(/beeficon.webp);
 		position: absolute;
 		top: -2.4rem;
 		left: -2.5rem;

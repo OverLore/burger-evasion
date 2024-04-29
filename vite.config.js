@@ -1,9 +1,6 @@
-import adapter from '@sveltejs/adapter-vercel';
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
 
-export default {
-	kit: {
-		adapter: adapter({
-			// see below for options that can be set here
-		})
-	}
-};
+export default defineConfig({
+	plugins: [sveltekit()]
+});
