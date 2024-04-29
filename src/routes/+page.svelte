@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import GoogleReview from '../components/GoogleReview.svelte';
 	import ParallaxImage from '../components/ParallaxImage.svelte';
 
@@ -90,6 +91,26 @@
 				"Oui. Nous travaillons activement à vous fournir un repas de la plus pure qualité qu'il soit. Nos pains buns sont des pains boulanger faits par un artisan local le matin-même. Nos viandes sont d'origine française et nos légumes proviennent également de producteurs locaux. Soyez certains de ne manger que du frais chez nous !"
 		}
 	];
+
+	let blurValue = 0;
+
+	function calculateBlur() {
+		const scrollY = window.scrollY;
+		const screenHeight = window.innerHeight;
+		const maxScroll = screenHeight;
+
+		const clampedScroll = Math.min(maxScroll, scrollY);
+
+		blurValue = (clampedScroll / maxScroll) * 8;
+	}
+
+	onMount(() => {
+		window.addEventListener('scroll', calculateBlur);
+
+		return () => {
+			window.removeEventListener('scroll', calculateBlur);
+		};
+	});
 </script>
 
 <main>
@@ -108,6 +129,10 @@
 				</div>
 			</div>
 		</section>
+		<div
+			class="glass"
+			style="backdrop-filter: blur({blurValue}px); -webkit-backdrop-filter: blur({blurValue}px);"
+		></div>
 		<div class="content">
 			<section class="chicken-burger-section deep-1">
 				<img class="chicken-burger-image" src="chicken.webp" alt="" />
@@ -309,13 +334,21 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		z-index: -2;
+		z-index: 1;
+		-webkit-box-shadow: 0px 0px 50px 20px #000000;
+		box-shadow: 0px 0px 50px 20px #000000;
 	}
 
 	.main-section {
 		position: fixed;
 		height: 100svh;
-		z-index: -2;
+	}
+
+	.glass {
+		position: fixed;
+		height: 100svh;
+		width: 100vw;
+		pointer-events: none;
 	}
 
 	.main-section img {

@@ -73,6 +73,7 @@
 
 <style>
 	footer {
+		position: relative;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 		display: flex;
