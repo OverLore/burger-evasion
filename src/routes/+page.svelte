@@ -464,36 +464,6 @@
 		font-size: 1.5rem;
 	}
 
-	.btn {
-		font-weight: 500;
-		color: white;
-		padding: 15px 45px;
-		border: none;
-		cursor: pointer;
-		font-size: 1.5rem;
-		transition: all 0.3s ease-in-out;
-		border: solid 2px transparent;
-		border-radius: 20px;
-		background-origin: border-box;
-		margin-top: 3rem;
-	}
-
-	.btn:hover {
-		box-shadow: 0 0 20px 5px rgba(249, 146, 43, 0.5);
-	}
-
-	.btn-primary {
-		background-image: linear-gradient(to right, var(--primary), var(--primary-variant));
-		font-weight: bold;
-	}
-
-	.btn-secondary {
-		background-color: transparent;
-		background-image: linear-gradient(#1e1e22, #1e1e22),
-			linear-gradient(to right, var(--primary), var(--primary-variant));
-		background-clip: padding-box, border-box;
-	}
-
 	.burger-description {
 		background-image: url(back-bugir.png);
 		background-position: 50%;

@@ -1,45 +1,82 @@
 <main class="chalk-background">
 	<div class="container deep-1">
-		<h1 class="gradient-text">QUI SOMMES-NOUS ?</h1>
-		<p style="width:60%; align-self: center;">
-			Tout a commencé en 2019, dans la petite cuisine de notre fondateur, John Doe. Passionné par la
-			gastronomie et l'innovation culinaire, John a créé le concept de Burger Evasion pour offrir
-			une expérience unique autour du burger. Inspiré par des voyages à travers le monde et une
-			envie de réinventer un classique, il a décidé de lancer un restaurant où chaque burger raconte
-			une histoire, alliant saveurs traditionnelles et touches exotiques. Ce qui distingue Burger
-			Evasion de ses concurrents, c’est son engagement envers la qualité et l'originalité.
-		</p>
-		<div class="grid-2-2" style="margin-top: 2rem;">
-			<img class="grid-img" src="team.webp" alt="" />
-			<p>
-				John, après une décennie passée dans l'industrie culinaire, et notre co-fondateur Jean,
-				expert en gestion, ont uni leurs forces pour transformer une idée en réalité. Notre équipe
-				est composée de chefs créatifs, de gestionnaires passionnés et d'un personnel attentif, tous
-				dédiés à offrir une expérience mémorable à chaque visite.
-			</p>
+		<h1 class="gradient-text">Il est grand temps<br />que nous nous présentions.</h1>
+		<div style="margin-left: 25rem; margin-right: 25rem;">
+			<h2 class="subtitle">
+				Burger Evasion est une expérience unique où vous êtes invité à redécouvrir ce classique
+				culinaire qu'est le burger.
+			</h2>
 		</div>
-		<p>
-			Le présent site, accessible à l’URL www.burgers.lucarnould.fr (le « Site »), est édité par :
-		</p>
-		<p>
-			Luc Arnould, résidant 510 rue de l'Hostellerie 30900 NÎMES, de nationalité Française (France),
-			né(e) le 27/09/2001
-		</p>
-		<h2>Hébergement</h2>
-		<p>
-			Le Site est hébergé par la société OVH SAS, situé 2 rue Kellermann - BP 80157 - 59053 Roubaix
-			Cedex 1, (contact téléphonique ou email : 1007).
-		</p>
-		<h2>Directeur de publication</h2>
-		<p>Le Directeur de la publication du Site est Luc Arnould.</p>
-		<h2>Nous contacter</h2>
-		<p>Par téléphone : +33661884721</p>
-		<p>Par email : luc.arnould08@gmail.com</p>
-		<p>Par courrier : 510 rue de l'Hostellerie 30900 NÎMES</p>
-		<p class="source">
-			Génération des mentions légales par <a href="https://www.legalstart.fr/">Legalstart</a>.
-		</p>
-		<a class="back" href="/">Retour à l'accueil</a>
+		<div style="align-self: center;">
+			<button class="btn btn-primary"> Consulter la carte </button>
+			<button class="btn btn-secondary" style="margin-left: 1rem;"> Nous trouver </button>
+		</div>
+		<div style="align-self: center;margin-left: 15rem; margin-right: 15rem; margin-top:10rem;">
+			<img class="team" src="team.webp" alt="" />
+		</div>
+		<div class="horizontal">
+			<div class="horizontal-content">
+				<h2 class="title">Notre histoire</h2>
+				<p>
+					Tout a commencé en 2019, dans la petite cuisine de notre fondateur, John Doe. Passionné
+					par la gastronomie et l'innovation culinaire, John a créé le concept de Burger Evasion
+					pour offrir une expérience unique autour du burger. Inspiré par des voyages à travers le
+					monde et une envie de réinventer un classique, il a décidé de lancer un restaurant où
+					chaque burger raconte une histoire, alliant saveurs traditionnelles et touches exotiques.
+					Ce qui distingue Burger Evasion de ses concurrents, c’est son engagement envers la qualité
+					et l'originalité.
+				</p>
+			</div>
+			<div class="horizontal-content">
+				<img class="team" src="team.webp" alt="" />
+			</div>
+		</div>
+		<div class="horizontal">
+			<div class="horizontal-content">
+				<img class="team" src="team.webp" alt="" />
+			</div>
+			<div class="horizontal-content">
+				<h2 class="title">Les prémices d'un succès</h2>
+				<p>
+					John, après une décennie passée dans l'industrie culinaire, et notre co-fondateur Jean,
+					expert en gestion, ont uni leurs forces pour transformer une idée en réalité. Notre équipe
+					est composée de chefs créatifs, de gestionnaires passionnés et d'un personnel attentif,
+					tous dédiés à offrir une expérience mémorable à chaque visite.
+				</p>
+			</div>
+		</div>
+		<div class="horizontal">
+			<div class="horizontal-content">
+				<h2 class="title">En pleine ascention</h2>
+				<p>
+					Depuis son ouverture, Burger Evasion a surmonté de nombreux défis, notamment l'adaptation
+					à la demande croissante pour nos burgers uniques. Nous avons élargi notre menu pour
+					inclure des options végétariennes et véganes, répondant ainsi aux besoins divers de nos
+					clients. Aujourd'hui, Burger Evasion n'est pas juste un restaurant, c'est une partie
+					intégrante de la communauté locale, organisant des événements et soutenant des initiatives
+					locales.
+				</p>
+			</div>
+			<div class="horizontal-content">
+				<img class="team" src="team.webp" alt="" />
+			</div>
+		</div>
+		<div class="horizontal">
+			<div class="horizontal-content">
+				<img class="team" src="team.webp" alt="" />
+			</div>
+			<div class="horizontal-content">
+				<h2 class="title">Notre vision</h2>
+				<p>
+					Notre mission chez Burger Evasion est de révolutionner l’expérience du burger. Nous nous
+					efforçons de créer des plats qui non seulement satisfont les papilles, mais qui inspirent
+					aussi nos clients. Nous visons à être un leader dans l'innovation culinaire tout en
+					maintenant un engagement envers la durabilité. Notre vision pour l'avenir inclut
+					l'expansion de notre marque à d'autres villes, en restant toujours fidèles à nos racines
+					et en valorisant les ingrédients locaux.
+				</p>
+			</div>
+		</div>
 	</div>
 </main>
 
@@ -51,8 +88,24 @@
 		align-items: center;
 	}
 
+	.team {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.horizontal {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.horizontal-content {
+		flex: 0 0 auto;
+		width: 46%;
+	}
+
 	.container {
-		margin-top: 5rem;
+		margin-top: 3rem;
 		padding-top: 6rem;
 		padding-bottom: 4rem;
 		display: flex;
@@ -83,6 +136,14 @@
 	.grid-img {
 		width: 100%;
 		height: auto;
+	}
+
+	.subtitle {
+		margin-top: 1rem;
+	}
+
+	.title {
+		font-size: 3rem;
 	}
 
 	h1,
