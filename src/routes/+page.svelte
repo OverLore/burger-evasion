@@ -119,7 +119,7 @@
 			<img src="section1burger.webp" alt="Parallax background" />
 			<div class="main-text-grid">
 				<div>
-					<h2>Goûtez les meilleurs burgers de votre vie.</h2>
+					<h2>Goûtez les <span class="underline">meilleurs</span> burgers de votre vie.</h2>
 					<h3>
 						Découvrez des burgers révolutionnaires, avec leur viande juteuse et succulente. Goûtez à
 						notre redéfinition de ce classique culinaire d'une manière inédite et inoubliable.
@@ -133,12 +133,12 @@
 			class="glass"
 			style="backdrop-filter: blur({blurValue}px); -webkit-backdrop-filter: blur({blurValue}px);"
 		></div>
-		<div class="content">
+		<div class="content chalk-background">
 			<section class="chicken-burger-section deep-1">
 				<img class="chicken-burger-image" src="chicken.webp" alt="" />
 				<div class="main-text-grid">
 					<div class="burger-description" style="z-index: 1;">
-						<h2 class="chicken">Le Chicken.</h2>
+						<h2>Le Chicke<span class="chicken">n</span>.</h2>
 						<h3>
 							Dégustez un morceau de poulet pané généreux, bordé de deux buns toastés, agrémenté de
 							tomates fraîches, d'oignons rouges caramélisés, cornichons, salade croquante et
@@ -152,7 +152,7 @@
 				<img class="beef-burger-image" src="beef.webp" alt="" />
 				<div class="main-text-grid">
 					<div class="revert-grid burger-description" style="z-index: 1;">
-						<h2 class="beef">Le Carnivore.</h2>
+						<h2><span class="beef">L</span>e Carnivore.</h2>
 						<h3>
 							Savourez un steak juteux à souhait, niché entre deux buns parfaitement toastés,
 							accompagné de tomates fraîches, d'oignons rouges doucement caramélisés, de cornichons
@@ -167,7 +167,7 @@
 				<img class="black-burger-image" src="black.webp" alt="" />
 				<div class="main-text-grid">
 					<div class="burger-description" style="z-index: 1;">
-						<h2>La gamme Black.</h2>
+						<h2>La gamme Blac<span class="black">k</span>.</h2>
 						<h3>
 							Plongez dans l'univers de notre gamme Black avec deux créations audacieuses, où le
 							noir élégant du pain encadre parfaitement la richesse des saveurs. Chaque bouchée de
@@ -389,15 +389,17 @@
 		text-transform: uppercase;
 		position: relative;
 		width: fit-content;
+		font-family: var(--ulagadi-bold);
 	}
 
 	.chicken::after {
 		content: url(/chickenicon.webp);
 		position: absolute;
-		top: -2.4rem;
+		top: -2.6rem;
 		left: auto;
 		bottom: auto;
-		right: -1.25rem;
+		right: -2.35rem;
+		pointer-events: none;
 	}
 
 	.beef {
@@ -406,6 +408,7 @@
 		text-transform: uppercase;
 		position: relative;
 		width: fit-content;
+		font-family: var(--ulagadi-bold);
 	}
 
 	.beef::before {
@@ -414,6 +417,45 @@
 		top: -2.4rem;
 		left: -2.5rem;
 		bottom: auto;
+		pointer-events: none;
+	}
+
+	.black {
+		font-size: 4.25rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+		width: fit-content;
+		font-family: var(--ulagadi-bold);
+	}
+
+	.black::after {
+		content: url(/blackicon.webp);
+		position: absolute;
+		top: -2.55rem;
+		left: auto;
+		bottom: auto;
+		right: -2.25rem;
+		pointer-events: none;
+	}
+
+	.underline {
+		font-size: 4.25rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		position: relative;
+		width: fit-content;
+		font-family: var(--ulagadi-bold);
+	}
+
+	.underline::after {
+		content: url(/underline.webp);
+		position: absolute;
+		top: auto;
+		left: auto;
+		bottom: -2.2rem;
+		right: -1.3rem;
+		pointer-events: none;
 	}
 
 	.main-text-grid h3 {

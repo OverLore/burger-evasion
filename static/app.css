@@ -16,6 +16,14 @@ body {
 	background-color: var(--secondary);
 }
 
+::-moz-selection {
+	background: #fc921a;
+}
+
+::selection {
+	background: #fc921a;
+}
+
 :root {
 	--primary: #f7b733;
 	--primary-variant: #fc4a1a;
@@ -47,6 +55,11 @@ body {
 	font-family: 'UlagadiSansLight';
 	src: url('/fonts/UlagadiSansLight.woff2') format('woff2');
 	font-style: normal;
+}
+
+.chalk-background {
+	background-image: url('chalkboard.webp');
+	background-repeat: repeat;
 }
 
 h1,

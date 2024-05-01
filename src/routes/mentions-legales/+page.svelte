@@ -1,4 +1,4 @@
-<main>
+<main class="chalk-background">
 	<div class="container deep-1">
 		<h1 class="gradient-text">MENTIONS LÉGALES</h1>
 		<p>
@@ -35,6 +35,9 @@
 <style>
 	main {
 		background-color: #1c1c1c;
+		display: flex;
+		align-content: center;
+		justify-content: center;
 	}
 
 	.container {

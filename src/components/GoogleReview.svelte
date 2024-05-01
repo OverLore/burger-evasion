@@ -27,6 +27,10 @@
 </div>
 
 <style>
+	p {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
 	.review-card {
 		display: flex;
 		flex-direction: column;

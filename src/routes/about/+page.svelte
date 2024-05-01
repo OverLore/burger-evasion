@@ -1,4 +1,4 @@
-<main>
+<main class="chalk-background">
 	<div class="container deep-1">
 		<h1 class="gradient-text">QUI SOMMES-NOUS ?</h1>
 		<p style="width:60%; align-self: center;">
