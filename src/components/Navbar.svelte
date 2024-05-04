@@ -33,7 +33,7 @@
 		</div>
 		<div>
 			<ul class="link-list">
-				<li><a class="btn" href="/map">Nous trouver</a></li>
+				<li><a style="display: inline;" class="btn" href="/#map">Nous trouver</a></li>
 			</ul>
 		</div>
 	</div>
@@ -61,9 +61,6 @@
 		margin-inline: 10rem;
 	}
 
-	.title-container {
-	}
-
 	.title-link {
 		display: flex;
 		align-items: center;
@@ -73,24 +70,10 @@
 		font-size: 1.25rem;
 	}
 
-	.title-link img {
-		width: 2rem;
-	}
-
 	.title-link h1 {
 		margin-left: 0.25rem;
 		padding-top: 2px;
 		font-size: 1.25rem;
-	}
-
-	.gradient-text {
-		background-color: var(--primary);
-		background-image: linear-gradient(45deg, var(--primary), var(--primary-variant));
-		background-size: 100%;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-moz-text-fill-color: transparent;
 	}
 
 	.image-mask {

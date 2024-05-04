@@ -124,16 +124,6 @@
 		font-size: 1.15rem;
 	}
 
-	.gradient-text {
-		background-color: var(--primary);
-		background-image: linear-gradient(45deg, var(--primary), var(--primary-variant));
-		background-size: 100%;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-moz-text-fill-color: transparent;
-	}
-
 	.image-mask {
 		width: 1.5rem;
 		height: 1.5rem;

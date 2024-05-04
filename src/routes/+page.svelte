@@ -124,8 +124,8 @@
 						Découvrez des burgers révolutionnaires, avec leur viande juteuse et succulente. Goûtez à
 						notre redéfinition de ce classique culinaire d'une manière inédite et inoubliable.
 					</h3>
-					<button class="btn btn-primary"> Consulter la carte </button>
-					<button class="btn btn-secondary" style="margin-left: 1rem;"> Nous trouver </button>
+					<a href="/carte" class="btn btn-primary"> Consulter la carte </a>
+					<a href="/#map" class="btn btn-secondary" style="margin-left: 1rem;"> Nous trouver </a>
 				</div>
 			</div>
 		</section>
@@ -144,7 +144,7 @@
 							tomates fraîches, d'oignons rouges caramélisés, cornichons, salade croquante et
 							cheddar fondant. <br />Un délice compact en saveurs !
 						</h3>
-						<button class="btn btn-primary">Découvrir</button>
+						<a href="/#map" class="btn btn-primary">Découvrir</a>
 					</div>
 				</div>
 			</section>
@@ -159,7 +159,7 @@
 							croquants, de salade fraîche et d'une tranche de cheddar onctueux et fondant. <br />Un
 							régal réservé aux vrais carnivores !
 						</h3>
-						<button class="btn btn-primary">Découvrir</button>
+						<a href="/#map" class="btn btn-primary">Découvrir</a>
 					</div>
 				</div>
 			</section>
@@ -175,7 +175,7 @@
 							entre texture, arôme, et visuel.<br />Bienvenue dans un monde où le noir révèle les
 							saveurs les plus intenses.
 						</h3>
-						<button class="btn btn-primary">Découvrir</button>
+						<a href="/#map" class="btn btn-primary">Découvrir</a>
 					</div>
 				</div>
 			</section>
@@ -220,7 +220,10 @@
 							Vous trouverez peut-être dans la section suivante une ou plusieurs réponses. Si vous
 							ne trouvez pas votre bonheur vous pouvez toujours nous les poser directement !
 						</p>
-						<button class="btn btn-primary">Nous contacter</button>
+						<a
+							href="mailto:luc.arnould08@gmail.com?subject=Contact%20site%20Burger"
+							class="btn btn-primary">Nous contacter</a
+						>
 					</div>
 					<ul class="faq-list">
 						{#each faqs as faq, index}
@@ -264,7 +267,7 @@
 					</div>
 					<ul class="social-list">
 						<li>
-							<a class="social" href="#">
+							<a class="social" href="https://www.instagram.com/lucarnould/">
 								<span></span>
 								<span></span>
 								<span></span>
@@ -647,19 +650,6 @@
 	.faq-answer p {
 		color: rgb(190, 190, 190);
 		font-size: 1rem;
-	}
-
-	.newsletter-section-background {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		object-fit: cover;
-		z-index: -1;
-		width: 100%;
-		height: 100%;
-		transition: object-position 0.1s;
 	}
 
 	.newsletter-section {

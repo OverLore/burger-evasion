@@ -49,18 +49,6 @@
 		justify-content: center;
 	}
 
-	.gradient-text {
-		background: var(--primary);
-		background: -webkit-linear-gradient(to right, var(--primary), var(--primary-variant));
-		background: linear-gradient(to right, var(--primary), var(--primary-variant));
-		background-size: 100%;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-moz-text-fill-color: transparent;
-	}
-
 	h1,
 	h2,
 	p,
