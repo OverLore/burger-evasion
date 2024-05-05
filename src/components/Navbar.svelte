@@ -20,9 +20,7 @@
 		<div class="title-container">
 			<a aria-label="Aller à l'accueil" href="/" class="title-link">
 				<div class="image-mask"></div>
-				<strong class="gradient-text" style="font-family: var(--ulagadi-bold); margin-left: 0.5rem;"
-					>Burger Evasion</strong
-				>
+				<strong class="gradient-text">Burger Evasion</strong>
 			</a>
 		</div>
 		<div>
@@ -79,10 +77,11 @@
 		font-size: 1.25rem;
 	}
 
-	.title-link h1 {
+	.title-link strong {
 		margin-left: 0.25rem;
 		padding-top: 2px;
 		font-size: 1.25rem;
+		font-family: var(--ulagadi-bold);
 	}
 
 	.image-mask {
@@ -105,9 +104,22 @@
 		font-weight: bold;
 	}
 
-	.link-list a {
+	.link-list li {
+		transition: transform 0.15s ease-in-out;
+	}
+
+	.link-list li a {
 		color: rgb(234, 234, 234);
 		text-decoration: none;
+		transition: color 0.15s ease-in-out;
+	}
+
+	.link-list li:hover {
+		transform: scale(1.15);
+	}
+
+	.link-list li:hover a {
+		color: white;
 	}
 
 	.btn {
