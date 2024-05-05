@@ -92,12 +92,14 @@ body {
 	font-family: 'UlagadiSansBold';
 	src: url('/fonts/UlagadiSansBold.woff2') format('woff2');
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'UlagadiSansLight';
 	src: url('/fonts/UlagadiSansLight.woff2') format('woff2');
 	font-style: normal;
+	font-display: swap;
 }
 
 .chalk-background {
@@ -111,5 +113,6 @@ h3,
 h4,
 h5,
 h6 {
+	font-display: swap;
 	font-family: var(--ulagadi-bold);
 }
