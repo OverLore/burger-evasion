@@ -529,12 +529,6 @@
 		pointer-events: none;
 	}
 
-	.main-text-grid h3 {
-		margin-top: 2rem;
-		font-weight: 500;
-		font-size: 1.5rem;
-	}
-
 	.burger-description-div {
 		background-image: url('/back-bugir.png');
 		background-position: 50%;
@@ -893,5 +887,182 @@
 		transform: scale(1);
 		transform-origin: bottom;
 		transition: transform 0.5s;
+	}
+
+	@media screen and (max-width: 1330px) {
+		.title {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.subtitle {
+			margin-top: 1rem;
+			font-weight: 300;
+			font-size: 1.25rem;
+		}
+
+		.burger-name {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.burger-description {
+			margin-top: 1rem;
+			font-weight: 500;
+			font-size: 1.25rem;
+			text-wrap: balance;
+		}
+
+		.underline {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			position: relative;
+			width: fit-content;
+			font-family: var(--ulagadi-bold);
+		}
+
+		.underline::after {
+			bottom: -1.9rem;
+			right: -4.5rem;
+			transform: scale(0.7);
+		}
+
+		.btn {
+			padding: 10px 35px;
+			font-size: 1.25rem;
+			border-radius: 15px;
+			margin-top: 2rem;
+		}
+
+		.chicken {
+			font-size: 3rem;
+		}
+
+		.chicken::after {
+			top: -2.8rem;
+			right: -2.45rem;
+			transform: scale(0.7);
+		}
+
+		.chicken-burger-section {
+			height: 80svh;
+		}
+
+		.chicken-burger-image {
+			height: 70vh;
+			left: 25vw;
+		}
+
+		.beef {
+			font-size: 3rem;
+		}
+
+		.beef::before {
+			top: -2.5rem;
+			left: -2.55rem;
+			transform: scale(0.7);
+		}
+
+		.beef-burger-section {
+			height: 80svh;
+		}
+
+		.beef-burger-image {
+			position: absolute;
+			height: 70vh;
+			right: 23vw;
+		}
+
+		.black {
+			font-size: 3rem;
+		}
+
+		.black::after {
+			top: -2.75rem;
+			right: -2.35rem;
+			transform: scale(0.7);
+		}
+
+		.black-burger-section {
+			height: 80svh;
+		}
+
+		.black-burger-image {
+			position: absolute;
+			height: 70vh;
+			left: 25vw;
+			top: 3rem;
+		}
+
+		.feedback-section h2 {
+			font-size: 3.5rem;
+		}
+
+		.map-section h2 {
+			font-size: 3.5rem;
+		}
+
+		.faq-section h2 {
+			font-size: 2.5rem;
+		}
+
+		.faq-question h3 {
+			font-size: 1.25rem;
+		}
+
+		.faq-question p {
+			font-size: 1rem;
+		}
+
+		.faq-answer p {
+			font-size: 1rem;
+		}
+
+		.faq-title h2 {
+			font-size: 3rem;
+		}
+
+		.faq-title p {
+			font-size: 1rem;
+			margin-top: 1.5rem;
+		}
+
+		.newsletter-section h2 {
+			font-size: 2.5rem;
+		}
+
+		.newsletter-container {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.newsletter-container h2 {
+			font-size: 3rem;
+		}
+
+		.newsletter-container h3 {
+			font-size: 1.5rem;
+			margin-top: 1rem;
+		}
+
+		.newsletter-container p {
+			font-size: 0.75rem;
+		}
+
+		.newsletter-mail-container {
+			grid-column-gap: 0.75rem;
+			grid-row-gap: 0.75rem;
+			margin-top: 2.5rem;
+		}
+
+		.social-list li a {
+			width: 3rem;
+			height: 3rem;
+			line-height: 3rem;
+			font-size: 2rem;
+		}
 	}
 </style>
