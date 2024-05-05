@@ -24,7 +24,7 @@
 			class="negative-anchor"
 			style="align-self: center;margin-left: 15rem; margin-right: 15rem; margin-top:10rem;"
 		>
-			<img class="team" src="team.webp" alt="" />
+			<img class="team" src="team.webp" alt="Personnel de Burger Évasion" />
 		</div>
 		<div class="horizontal" style="margin-top: 8rem;">
 			<div class="horizontal-content-wide-s">
@@ -43,7 +43,7 @@
 				</p>
 			</div>
 			<div class="horizontal-content-small-s">
-				<img class="team" src="story.svg" alt="" />
+				<img class="team" src="story.svg" alt="Flat Design Notre Histoire" />
 			</div>
 		</div>
 		<h2 class="divider-text" style="margin-top: 6rem;">

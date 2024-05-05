@@ -128,7 +128,7 @@
 <main>
 	<div class="main-container">
 		<section class="main-section deep-1">
-			<img src="section1burger.webp" alt="Parallax background" />
+			<img src="section1burger.webp" alt="Burger au boeuf" />
 			<div class="main-text-grid">
 				<div>
 					<h1 class="title">
@@ -158,7 +158,7 @@
 		></div>
 		<div class="content chalk-background">
 			<section class="chicken-burger-section deep-1">
-				<img class="chicken-burger-image" src="chicken.webp" alt="" />
+				<img class="chicken-burger-image" src="chicken.webp" alt="Burger au poulet" />
 				<div class="main-text-grid">
 					<div class="burger-description-div" style="z-index: 1;">
 						<h2 class="burger-name">Le Chicke<span class="chicken">n</span>.</h2>
@@ -174,7 +174,7 @@
 				</div>
 			</section>
 			<section class="beef-burger-section deep-1">
-				<img class="beef-burger-image" src="beef.webp" alt="" />
+				<img class="beef-burger-image" src="beef.webp" alt="Burger au boeuf" />
 				<div class="main-text-grid">
 					<div class="revert-grid burger-description-div" style="z-index: 1;">
 						<h2 class="burger-name"><span class="beef">L</span>e Carnivore.</h2>
@@ -191,7 +191,7 @@
 				</div>
 			</section>
 			<section class="black-burger-section deep-1">
-				<img class="black-burger-image" src="black.webp" alt="" />
+				<img class="black-burger-image" src="black.webp" alt="Burger noir" />
 				<div class="main-text-grid">
 					<div class="burger-description-div" style="z-index: 1;">
 						<h2 class="burger-name">La gamme Blac<span class="black">k</span>.</h2>
@@ -220,7 +220,7 @@
 				style="width: 100%; position: relative; display: flex; justify-content: center;"
 				id="map"
 			>
-				<img class="map-section-background" src="map-background.webp" alt="" />
+				<img class="map-section-background" src="map-background.webp" alt="Arrière plan" />
 				<div class="map-section deep-1">
 					<h2>Nous trouver.</h2>
 					<div class="map-container">

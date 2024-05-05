@@ -8,7 +8,7 @@
 
 <div class="review-card">
 	<div class="profile">
-		<img src={picture} alt="Profil" class="profile-img" />
+		<img src={picture} alt="Profil de l'utilisateur" class="profile-img" />
 	</div>
 	<strong class="profile-name">{author}</strong>
 	<p class="review-date">{date}</p>
@@ -23,7 +23,7 @@
 	<p class="review-text">
 		{text}
 	</p>
-	<img src="google.webp" alt="Google icon" class="google-icon" />
+	<img src="google.webp" alt="Logo de Google" class="google-icon" />
 </div>
 
 <style>

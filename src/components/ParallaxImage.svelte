@@ -46,7 +46,7 @@
 <img
 	class="parallax-background"
 	{src}
-	alt="Parallax background"
+	alt="Fond en parallaxe"
 	style="--objectPositionY: {objectPositionY};"
 />
 
