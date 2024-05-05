@@ -20,7 +20,9 @@
 		<div class="title-container">
 			<a href="/" class="title-link">
 				<div class="image-mask"></div>
-				<h1 class="gradient-text">Burger Evasion</h1>
+				<strong class="gradient-text" style="font-family: var(--ulagadi-bold); margin-left: 0.5rem;"
+					>Burger Evasion</strong
+				>
 			</a>
 		</div>
 		<div>

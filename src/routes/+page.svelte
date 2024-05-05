@@ -131,11 +131,13 @@
 			<img src="section1burger.webp" alt="Parallax background" />
 			<div class="main-text-grid">
 				<div>
-					<h2>Goûtez les <span class="underline">meilleurs</span> burgers de votre vie.</h2>
-					<h3>
+					<h1 class="title">
+						Goûtez les <span class="underline">meilleurs</span> burgers de votre vie.
+					</h1>
+					<h2 class="subtitle">
 						Découvrez des burgers révolutionnaires, avec leur viande juteuse et succulente. Goûtez à
 						notre redéfinition de ce classique culinaire d'une manière inédite et inoubliable.
-					</h3>
+					</h2>
 					<a href="/carte" class="btn btn-primary"> Consulter la carte </a>
 					<a href="/#map" class="btn btn-secondary" style="margin-left: 1rem;"> Nous trouver </a>
 				</div>
@@ -149,9 +151,9 @@
 			<section class="chicken-burger-section deep-1">
 				<img class="chicken-burger-image" src="chicken.webp" alt="" />
 				<div class="main-text-grid">
-					<div class="burger-description" style="z-index: 1;">
-						<h2>Le Chicke<span class="chicken">n</span>.</h2>
-						<h3>
+					<div class="burger-description-div" style="z-index: 1;">
+						<h2 class="burger-name">Le Chicke<span class="chicken">n</span>.</h2>
+						<h3 class="burger-description">
 							Dégustez un morceau de poulet pané généreux, bordé de deux buns toastés, agrémenté de
 							tomates fraîches, d'oignons rouges caramélisés, cornichons, salade croquante et
 							cheddar fondant. <br />Un délice compact en saveurs !
@@ -163,9 +165,9 @@
 			<section class="beef-burger-section deep-1">
 				<img class="beef-burger-image" src="beef.webp" alt="" />
 				<div class="main-text-grid">
-					<div class="revert-grid burger-description" style="z-index: 1;">
-						<h2><span class="beef">L</span>e Carnivore.</h2>
-						<h3>
+					<div class="revert-grid burger-description-div" style="z-index: 1;">
+						<h2 class="burger-name"><span class="beef">L</span>e Carnivore.</h2>
+						<h3 class="burger-description">
 							Savourez un steak juteux à souhait, niché entre deux buns parfaitement toastés,
 							accompagné de tomates fraîches, d'oignons rouges doucement caramélisés, de cornichons
 							croquants, de salade fraîche et d'une tranche de cheddar onctueux et fondant. <br />Un
@@ -178,9 +180,9 @@
 			<section class="black-burger-section deep-1">
 				<img class="black-burger-image" src="black.webp" alt="" />
 				<div class="main-text-grid">
-					<div class="burger-description" style="z-index: 1;">
-						<h2>La gamme Blac<span class="black">k</span>.</h2>
-						<h3>
+					<div class="burger-description-div" style="z-index: 1;">
+						<h2 class="burger-name">La gamme Blac<span class="black">k</span>.</h2>
+						<h3 class="burger-description">
 							Plongez dans l'univers de notre gamme Black avec deux créations audacieuses, où le
 							noir élégant du pain encadre parfaitement la richesse des saveurs. Chaque bouchée de
 							nos burgers Black vous transporte dans une dimension offrant une harmonie parfaite
@@ -412,10 +414,29 @@
 		align-items: end;
 	}
 
-	.main-text-grid h2 {
+	.title {
 		font-size: 4.25rem;
 		font-weight: 600;
 		text-transform: uppercase;
+	}
+
+	.subtitle {
+		margin-top: 2rem;
+		font-weight: 500;
+		font-size: 1.5rem;
+	}
+
+	.burger-name {
+		font-size: 4.25rem;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.burger-description {
+		margin-top: 2rem;
+		font-weight: 500;
+		font-size: 1.5rem;
+		text-wrap: balance;
 	}
 
 	.chicken {
@@ -499,7 +520,7 @@
 		font-size: 1.5rem;
 	}
 
-	.burger-description {
+	.burger-description-div {
 		background-image: url('/back-bugir.png');
 		background-position: 50%;
 		background-repeat: no-repeat;
@@ -515,7 +536,7 @@
 		position: absolute;
 		height: 90vh;
 		top: 5vh;
-		left: 25vw;
+		left: 30vw;
 	}
 
 	.beef-burger-section {
