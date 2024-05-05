@@ -113,6 +113,18 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Burger Evasion - Découvrez les meilleurs burgers artisanaux</title>
+	<meta
+		name="description"
+		content="Explorez Burger Evasion pour une expérience culinaire unique avec nos burgers artisanaux. Dégustez des ingrédients frais et locaux dans chaque bouchée pour redécouvrir le burger comme ne l'avez jamais goûté."
+	/>
+	<meta
+		name="robots"
+		content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+	/>
+</svelte:head>
+
 <main>
 	<div class="main-container">
 		<section class="main-section deep-1">
