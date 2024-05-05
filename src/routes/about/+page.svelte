@@ -120,7 +120,7 @@
 	}
 
 	.anchor::before {
-		content: url(/anchor.webp);
+		content: url('/anchor.webp');
 		position: absolute;
 		top: -2.55rem;
 		left: -3.25rem;
@@ -130,7 +130,7 @@
 	}
 
 	.anchor::after {
-		content: url(/anchor.webp);
+		content: url('/anchor.webp');
 		position: absolute;
 		bottom: -2.55rem;
 		right: -3.25rem;
@@ -146,7 +146,7 @@
 	}
 
 	.negative-anchor::before {
-		content: url(/anchor.webp);
+		content: url('/anchor.webp');
 		position: absolute;
 		top: auto;
 		left: -3.25rem;
@@ -157,7 +157,7 @@
 	}
 
 	.negative-anchor::after {
-		content: url(/anchor.webp);
+		content: url('/anchor.webp');
 		position: absolute;
 		top: -2.55rem;
 		right: -3.25rem;

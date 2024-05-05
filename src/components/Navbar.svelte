@@ -80,8 +80,8 @@
 		width: 2rem;
 		height: 2rem;
 		background-image: linear-gradient(180deg, var(--primary), var(--primary-variant));
-		-webkit-mask-image: url('icon.svg');
-		mask-image: url('icon.svg');
+		-webkit-mask-image: url('/icon.svg');
+		mask-image: url('/icon.svg');
 		mask-size: cover;
 	}
 

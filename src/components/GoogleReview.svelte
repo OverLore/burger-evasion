@@ -10,7 +10,7 @@
 	<div class="profile">
 		<img src={picture} alt="Profil" class="profile-img" />
 	</div>
-	<h4 class="profile-name">{author}</h4>
+	<strong class="profile-name">{author}</strong>
 	<p class="review-date">{date}</p>
 	<div class="rating">
 		{#each Array(stars) as _, index (index)}
@@ -54,7 +54,7 @@
 		margin: 0;
 		font-size: 1rem;
 		color: #161616;
-		font-weight: 800;
+		font-weight: bold;
 	}
 
 	.review-date {
@@ -65,7 +65,7 @@
 	}
 
 	.rating {
-		color: #ffc800; /* Couleur or pour les étoiles */
+		color: #ffc800;
 	}
 
 	.star {

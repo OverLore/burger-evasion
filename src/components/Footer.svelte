@@ -79,7 +79,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-image: url(back-bugir.png);
+		background-image: url('/back-bugir.png');
 		background-position: 50%;
 		background-repeat: no-repeat;
 		background-size: auto 75%;
@@ -128,8 +128,8 @@
 		width: 1.5rem;
 		height: 1.5rem;
 		background-image: linear-gradient(180deg, var(--primary), var(--primary-variant));
-		-webkit-mask-image: url('icon.svg');
-		mask-image: url('icon.svg');
+		-webkit-mask-image: url('/icon.svg');
+		mask-image: url('/icon.svg');
 		mask-size: cover;
 		margin-right: 0.75rem;
 	}

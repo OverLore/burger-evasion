@@ -103,7 +103,7 @@ body {
 }
 
 .chalk-background {
-	background-image: url('chalkboard.webp');
+	background-image: url('/chalkboard.webp');
 	background-repeat: repeat;
 }
 

@@ -267,7 +267,11 @@
 					</div>
 					<ul class="social-list">
 						<li>
-							<a class="social" href="https://www.instagram.com/lucarnould/">
+							<a
+								class="social"
+								href="https://www.instagram.com/lucarnould/"
+								aria-label="Page Facebook de Luc Arnould"
+							>
 								<span></span>
 								<span></span>
 								<span></span>
@@ -276,7 +280,12 @@
 							</a>
 						</li>
 						<li>
-							<a class="social" href="https://www.instagram.com/lucarnould/" target="_blank">
+							<a
+								class="social"
+								href="https://www.instagram.com/lucarnould/"
+								target="_blank"
+								aria-label="Page Instagram de Luc Arnould"
+							>
 								<span></span>
 								<span></span>
 								<span></span>
@@ -285,7 +294,12 @@
 							</a>
 						</li>
 						<li>
-							<a class="social" href="https://www.tiktok.com/@_scottii/" target="_blank">
+							<a
+								class="social"
+								href="https://www.tiktok.com/@_scottii/"
+								target="_blank"
+								aria-label="Chaîne TikTok de Luc Arnould"
+							>
 								<span></span>
 								<span></span>
 								<span></span>
@@ -294,7 +308,12 @@
 							</a>
 						</li>
 						<li>
-							<a class="social" href="https://www.linkedin.com/in/luc-arnould/" target="_blank">
+							<a
+								class="social"
+								href="https://www.linkedin.com/in/luc-arnould/"
+								target="_blank"
+								aria-label="Compte Linkedin de Luc Arnould"
+							>
 								<span></span>
 								<span></span>
 								<span></span>
@@ -307,6 +326,7 @@
 								class="social"
 								href="https://www.youtube.com/channel/UCYaQhULOHO684SKERsnf9nw"
 								target="_blank"
+								aria-label="Chaîne Youtube de Luc Arnould"
 							>
 								<span></span>
 								<span></span>
@@ -396,7 +416,7 @@
 	}
 
 	.chicken::after {
-		content: url(/chickenicon.webp);
+		content: url('/chickenicon.webp');
 		position: absolute;
 		top: -2.6rem;
 		left: auto;
@@ -415,7 +435,7 @@
 	}
 
 	.beef::before {
-		content: url(/beeficon.webp);
+		content: url('/beeficon.webp');
 		position: absolute;
 		top: -2.4rem;
 		left: -2.5rem;
@@ -433,7 +453,7 @@
 	}
 
 	.black::after {
-		content: url(/blackicon.webp);
+		content: url('/blackicon.webp');
 		position: absolute;
 		top: -2.55rem;
 		left: auto;
@@ -452,7 +472,7 @@
 	}
 
 	.underline::after {
-		content: url(/underline.webp);
+		content: url('/underline.webp');
 		position: absolute;
 		top: auto;
 		left: auto;
@@ -468,7 +488,7 @@
 	}
 
 	.burger-description {
-		background-image: url(back-bugir.png);
+		background-image: url('/back-bugir.png');
 		background-position: 50%;
 		background-repeat: no-repeat;
 		background-size: auto 75%;
@@ -514,7 +534,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-image: url(back-bugir.png);
+		background-image: url('/back-bugir.png');
 		background-position: 50%;
 		background-repeat: no-repeat;
 		background-size: auto 75%;
@@ -574,7 +594,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-image: url(back-bugir.png);
+		background-image: url('/back-bugir.png');
 		background-position: 50%;
 		background-repeat: no-repeat;
 		background-size: auto 75%;

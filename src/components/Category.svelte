@@ -32,7 +32,7 @@
 	}
 
 	.separator::after {
-		content: url(/burger-underline.webp);
+		content: url('/burger-underline.webp');
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
