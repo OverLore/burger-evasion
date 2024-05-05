@@ -2,7 +2,7 @@
 	<div class="container deep-1">
 		<div class="content">
 			<div class="logo-container">
-				<a href="/" class="title-link">
+				<a aria-label="Aller à l'accueil" href="/" class="title-link">
 					<div class="image-mask"></div>
 					<h4 class="gradient-text">Burger Evasion</h4>
 				</a>
@@ -33,10 +33,14 @@
 					style="height: 1px; margin-top:0.25rem; margin-bottom: 0.5rem; width:2rem;"
 					class="logo-container-line"
 				></div>
-				<a href="/#map">Nous trouver</a>
-				<a href="/#faq">FAQ</a>
-				<a href="/carte">Carte</a>
-				<a href="https://www.lucarnould.fr/" target="_blank">Portfolio</a>
+				<a aria-label="Nous trouver géographiquement" href="/#map">Nous trouver</a>
+				<a aria-label="Aller à la section foire aux questions" href="/#faq">FAQ</a>
+				<a aria-label="Nous trouver géographiquement" href="/carte">Carte</a>
+				<a
+					aria-label="Consulter le portfolio du créateur"
+					href="https://www.lucarnould.fr/"
+					target="_blank">Portfolio</a
+				>
 			</div>
 			<div class="social-container">
 				<div class="social-list">
@@ -65,7 +69,7 @@
 		<div class="legal">
 			<div class="legal-content">
 				<p>Copyright &copy; 2024 Luc Arnould. Tous droits réservés</p>
-				<a href="/mentions-legales">Mentions légales</a>
+				<a aria-label="Consulter les mentions légales" href="/mentions-legales">Mentions légales</a>
 			</div>
 		</div>
 	</div>

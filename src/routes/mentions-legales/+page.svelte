@@ -28,7 +28,7 @@
 		<p class="source">
 			Génération des mentions légales par <a href="https://www.legalstart.fr/">Legalstart</a>.
 		</p>
-		<a class="back" href="/">Retour à l'accueil</a>
+		<a aria-label="Retourner à l'accueil" class="back" href="/">Retour à l'accueil</a>
 	</div>
 </main>
 

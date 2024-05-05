@@ -138,8 +138,17 @@
 						Découvrez des burgers révolutionnaires, avec leur viande juteuse et succulente. Goûtez à
 						notre redéfinition de ce classique culinaire d'une manière inédite et inoubliable.
 					</h2>
-					<a href="/carte" class="btn btn-primary"> Consulter la carte </a>
-					<a href="/#map" class="btn btn-secondary" style="margin-left: 1rem;"> Nous trouver </a>
+					<a aria-label="Consulter la carte" href="/carte" class="btn btn-primary">
+						Consulter la carte
+					</a>
+					<a
+						aria-label="Nous trouver géographiquement"
+						href="/#map"
+						class="btn btn-secondary"
+						style="margin-left: 1rem;"
+					>
+						Nous trouver
+					</a>
 				</div>
 			</div>
 		</section>
@@ -158,7 +167,9 @@
 							tomates fraîches, d'oignons rouges caramélisés, cornichons, salade croquante et
 							cheddar fondant. <br />Un délice compact en saveurs !
 						</h3>
-						<a href="/#map" class="btn btn-primary">Découvrir</a>
+						<a aria-label="Découvrir le burger (Nous trouver)" href="/#map" class="btn btn-primary"
+							>Découvrir</a
+						>
 					</div>
 				</div>
 			</section>
@@ -173,7 +184,9 @@
 							croquants, de salade fraîche et d'une tranche de cheddar onctueux et fondant. <br />Un
 							régal réservé aux vrais carnivores !
 						</h3>
-						<a href="/#map" class="btn btn-primary">Découvrir</a>
+						<a aria-label="Découvrir le burger (Nous trouver)" href="/#map" class="btn btn-primary"
+							>Découvrir</a
+						>
 					</div>
 				</div>
 			</section>
@@ -189,7 +202,9 @@
 							entre texture, arôme, et visuel.<br />Bienvenue dans un monde où le noir révèle les
 							saveurs les plus intenses.
 						</h3>
-						<a href="/#map" class="btn btn-primary">Découvrir</a>
+						<a aria-label="Découvrir le burger (Nous trouver)" href="/#map" class="btn btn-primary"
+							>Découvrir</a
+						>
 					</div>
 				</div>
 			</section>

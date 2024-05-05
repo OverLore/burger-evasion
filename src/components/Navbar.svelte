@@ -18,7 +18,7 @@
 <nav aria-label="Main navigation" style="background-color: rgba(10, 10, 10, {opacity});">
 	<div class="main-container">
 		<div class="title-container">
-			<a href="/" class="title-link">
+			<a aria-label="Aller à l'accueil" href="/" class="title-link">
 				<div class="image-mask"></div>
 				<strong class="gradient-text" style="font-family: var(--ulagadi-bold); margin-left: 0.5rem;"
 					>Burger Evasion</strong
@@ -27,15 +27,22 @@
 		</div>
 		<div>
 			<ul class="link-list">
-				<li><a href="/">Accueil</a></li>
-				<li><a href="/about">À propos</a></li>
-				<li><a href="/carte">La carte</a></li>
-				<li><a href="/#faq">FAQ</a></li>
+				<li><a aria-label="Aller à l'accueil" href="/">Accueil</a></li>
+				<li><a aria-label="Aller sur la page 'A Propos'" href="/about">À propos</a></li>
+				<li><a aria-label="Consulter la carte" href="/carte">La carte</a></li>
+				<li><a aria-label="Aller à la section foire aux questions" href="/#faq">FAQ</a></li>
 			</ul>
 		</div>
 		<div>
 			<ul class="link-list">
-				<li><a style="display: inline;" class="btn" href="/#map">Nous trouver</a></li>
+				<li>
+					<a
+						aria-label="Nous trouver géographiquement"
+						style="display: inline;"
+						class="btn"
+						href="/#map">Nous trouver</a
+					>
+				</li>
 			</ul>
 		</div>
 	</div>

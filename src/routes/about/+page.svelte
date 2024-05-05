@@ -8,8 +8,17 @@
 			</h2>
 		</div>
 		<div style="align-self: center;">
-			<a href="/carte" class="btn btn-primary"> Consulter la carte </a>
-			<a href="/carte" class="btn btn-secondary" style="margin-left: 1rem;"> Nous trouver </a>
+			<a aria-label="Consulter la carte" href="/carte" class="btn btn-primary">
+				Consulter la carte
+			</a>
+			<a
+				aria-label="Nous trouver géographiquement"
+				href="/carte"
+				class="btn btn-secondary"
+				style="margin-left: 1rem;"
+			>
+				Nous trouver
+			</a>
 		</div>
 		<div
 			class="negative-anchor"
