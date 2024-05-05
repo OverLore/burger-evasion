@@ -56,7 +56,7 @@
 
 <style>
 	.parallax-background {
-		position: absolute; /* Couvre toute la fenêtre, modifiez selon besoin */
+		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;

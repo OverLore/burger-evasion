@@ -26,9 +26,8 @@
 		<div>
 			<ul class="link-list">
 				<li><a href="/about">À propos</a></li>
-				<li><a href="/menu">La carte</a></li>
-				<li><a href="/services">Services</a></li>
-				<li><a href="/contact">Contact</a></li>
+				<li><a href="/carte">La carte</a></li>
+				<li><a href="/#faq">FAQ</a></li>
 			</ul>
 		</div>
 		<div>

@@ -49,7 +49,7 @@
 					<p style="text-align: left;">
 						Depuis son ouverture, Burger Evasion a surmonté de nombreux défis, notamment
 						l'adaptation à la demande croissante pour nos burgers uniques. Nous avons élargi notre
-						menu pour inclure des options végétariennes et véganes, répondant ainsi aux besoins
+						carte pour inclure des options végétariennes et véganes, répondant ainsi aux besoins
 						divers de nos clients. Aujourd'hui, Burger Evasion n'est pas juste un restaurant, c'est
 						une partie intégrante de la communauté locale, organisant des événements et soutenant
 						des initiatives locales.

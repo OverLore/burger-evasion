@@ -1,0 +1,253 @@
+{
+	"Menu": {
+		"Aperitifs": [
+			{
+				"nom": "Bière Locale",
+				"prix": "5,00 €",
+				"description": "Sélection de bières artisanales brassées localement."
+			},
+			{
+				"nom": "Vin Rouge Maison",
+				"prix": "4,50 € (verre), 18,00 € (bouteille)",
+				"description": "Sélectionné parmi les vignerons régionaux, parfait pour accompagner un burger."
+			},
+			{
+				"nom": "Vin Blanc Frais",
+				"prix": "4,50 € (verre), 18,00 € (bouteille)",
+				"description": "Léger et rafraîchissant, idéal pour une soirée d'été."
+			},
+			{
+				"nom": "Champagne Brut",
+				"prix": "7,00 € (verre), 30,00 € (bouteille)",
+				"description": "Bulles fines pour célébrer tout événement spécial."
+			},
+			{
+				"nom": "Whisky Pur Malt",
+				"prix": "6,00 €",
+				"description": "Riche et profond, avec une finition lisse."
+			},
+			{
+				"nom": "Vodka Premium",
+				"prix": "5,00 €",
+				"description": "Distillée pour une pureté exceptionnelle."
+			},
+			{
+				"nom": "Rhum Aged",
+				"prix": "5,00 €",
+				"description": "Parfait pour les amateurs de spiritueux forts."
+			},
+			{
+				"nom": "Gin Artisanal",
+				"prix": "5,00 €",
+				"description": "Infusé avec des herbes locales uniques."
+			},
+			{
+				"nom": "Tequila Silver",
+				"prix": "5,00 €",
+				"description": "Claire et piquante, idéale pour les shots."
+			},
+			{
+				"nom": "Apéritif de la Maison",
+				"prix": "6,00 €",
+				"description": "Un mélange secret, préparé quotidiennement par le chef."
+			}
+		],
+		"Cocktails": [
+			{
+				"nom": "Mojito Classique",
+				"prix": "7,00 €",
+				"description": "Rhum, menthe fraîche, citron vert, eau gazeuse et sucre."
+			},
+			{
+				"nom": "Cosmopolitan",
+				"prix": "7,00 €",
+				"description": "Vodka, triple sec, cranberry et jus de citron vert."
+			},
+			{
+				"nom": "Margarita",
+				"prix": "7,00 €",
+				"description": "Tequila, triple sec et jus de citron vert, servi avec du sel sur le bord."
+			},
+			{
+				"nom": "Pina Colada",
+				"prix": "7,50 €",
+				"description": "Rhum, jus d'ananas et crème de coco."
+			},
+			{
+				"nom": "Sangria Maison",
+				"prix": "6,00 €",
+				"description": "Vin rouge, liqueur d'orange, fruits frais."
+			},
+			{
+				"nom": "Negroni",
+				"prix": "8,00 €",
+				"description": "Gin, vermouth rouge et Campari."
+			},
+			{
+				"nom": "Long Island Iced Tea",
+				"prix": "9,00 €",
+				"description": "Vodka, tequila, rhum, gin, triple sec, citron et cola."
+			},
+			{
+				"nom": "Daiquiri aux Fraises",
+				"prix": "7,00 €",
+				"description": "Rhum, fraises fraîches, sucre et jus de citron vert."
+			}
+		],
+		"Softs": [
+			{
+				"nom": "Coca-Cola",
+				"prix": "2,50 €",
+				"description": ""
+			},
+			{
+				"nom": "Sprite",
+				"prix": "2,50 €",
+				"description": ""
+			},
+			{
+				"nom": "Fanta",
+				"prix": "2,50 €",
+				"description": ""
+			},
+			{
+				"nom": "Ice Tea",
+				"prix": "2,50 €",
+				"description": ""
+			},
+			{
+				"nom": "Limonade Maison",
+				"prix": "3,00 €",
+				"description": "Fraîchement préparée avec des citrons bio, légèrement sucrée avec du miel de lavande."
+			},
+			{
+				"nom": "Sodas Bio",
+				"prix": "2,50 €",
+				"description": "Choix de cola, orange, ou citron vert, tous produits localement sans conservateurs."
+			},
+			{
+				"nom": "Eaux Aromatisées",
+				"prix": "2,00 €",
+				"description": "Infusions maison de fruits et herbes fraîches : choix entre framboise-menthe et concombre-citron."
+			}
+		],
+		"Burgers": [
+			{
+				"nom": "Le Carnivore",
+				"prix": "9,00 €",
+				"description": "Viande hachée de bœuf du Limousin, cheddar affiné, tomates fraîches, laitue, et sauce spéciale du chef. Servi dans un bun classique ou noir."
+			},
+			{
+				"nom": "Le Carnivore Black",
+				"prix": "10,00 €",
+				"description": "Le classique Carnivore servi avec notre signature bun noir, ajoutant une touche mystérieuse à votre expérience."
+			},
+			{
+				"nom": "Le Chicken Deluxe",
+				"prix": "9,00 €",
+				"description": "Filet de poulet pané, mayonnaise au citron, roquette, avocat et oignons caramélisés."
+			},
+			{
+				"nom": "Le Chicken Deluxe Black",
+				"prix": "10,00 €",
+				"description": "Variante de notre Chicken Deluxe, présenté dans un bun noir élégant."
+			},
+			{
+				"nom": "Le Bleu d'Auvergne",
+				"prix": "10,00 €",
+				"description": "Bœuf haché, fromage bleu crémeux, poires pochées, et noix, avec une touche de miel. Un délice sucré-salé."
+			},
+			{
+				"nom": "Le Barbecue Texan",
+				"prix": "10,00 €",
+				"description": "Bœuf haché, bacon croustillant, oignon frit, et sauce barbecue fumée, couronné de pickles maison."
+			},
+			{
+				"nom": "L'Agneau Provençal",
+				"prix": "11,00 €",
+				"description": "Steak d’agneau haché, tapenade d'olives noires, tomates séchées et herbes de Provence."
+			},
+			{
+				"nom": "Le Veggie Vert",
+				"prix": "8,50 €",
+				"description": "Galette maison de légumes, épinards frais, fromage de chèvre et pesto de basilic."
+			}
+		],
+		"Accompagnements": [
+			{
+				"nom": "Frites Maison",
+				"prix": "3,50 €",
+				"description": "Avec choix de sauce."
+			},
+			{
+				"nom": "Ailes de Poulet Caramélisées",
+				"prix": "6,00 €",
+				"description": ""
+			},
+			{
+				"nom": "Assortiment de Légumes Grillés",
+				"prix": "5,00 €",
+				"description": ""
+			},
+			{
+				"nom": "Onion Rings",
+				"prix": "4,00 €",
+				"description": "Anneaux d'oignon dorés et croustillants."
+			},
+			{
+				"nom": "Coleslaw Maison",
+				"prix": "3,00 €",
+				"description": "Chou et carottes râpés avec une vinaigrette crémeuse."
+			}
+		],
+		"Desserts": [
+			{
+				"nom": "Cheesecake au Caramel et Beurre Salé",
+				"prix": "6,00 €",
+				"description": "Base croustillante, garniture crémeuse au fromage frais, nappée de caramel au beurre salé."
+			},
+			{
+				"nom": "Brownie aux Noix",
+				"prix": "5,50 €",
+				"description": "Chocolat riche et noix croquantes, servi avec une boule de glace à la vanille."
+			},
+			{
+				"nom": "Tarte Tatin Revisitée",
+				"prix": "5,00 €",
+				"description": "Pommes caramélisées sur un feuilleté croustillant, accompagnée de crème fraîche."
+			},
+			{
+				"nom": "Mini Burger Sucré",
+				"prix": "6,00 €",
+				"description": "Petit bun sucré, garni de crème de mascarpone et de tranches de fraises fraîches, saupoudré de sucre glace."
+			},
+			{
+				"nom": "Mousse au Chocolat Noir",
+				"prix": "5,50 €",
+				"description": "Riche et onctueuse, avec un coulis de framboise."
+			},
+			{
+				"nom": "Parfait Glacé aux Fruits de la Passion",
+				"prix": "5,50 €",
+				"description": "Léger et rafraîchissant, avec une meringue croquante."
+			}
+		],
+		"Formules et Menus": [
+			{
+				"nom": "Menu Burger Classique",
+				"prix": "15,00 €",
+				"description": "Choix de n'importe quel burger standard, frites, boisson soft et dessert."
+			},
+			{
+				"nom": "Menu Burger Gourmet",
+				"prix": "18,00 €",
+				"description": "Choix de n'importe quel burger gourmet, accompagnement premium, cocktail et mini burger sucré en dessert."
+			},
+			{
+				"nom": "Menu Enfant",
+				"prix": "8,00 €",
+				"description": "Mini burger, frites, boisson soft et glace au choix."
+			}
+		]
+	}
+}

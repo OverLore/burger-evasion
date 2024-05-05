@@ -35,7 +35,7 @@
 				></div>
 				<a href="/#map">Nous trouver</a>
 				<a href="/#faq">FAQ</a>
-				<a href="/menu">Menu</a>
+				<a href="/carte">Carte</a>
 				<a href="https://www.lucarnould.fr/" target="_blank">Portfolio</a>
 			</div>
 			<div class="social-container">
