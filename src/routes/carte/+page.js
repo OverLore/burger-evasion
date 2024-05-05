@@ -5,8 +5,7 @@ export async function load({ fetch }) {
 			const carte = await response.json();
 			return {
 				props: {
-					carte: carte,
-					loading: false
+					carte: carte
 				}
 			};
 		} else {
@@ -17,7 +16,6 @@ export async function load({ fetch }) {
 		return {
 			props: {
 				carte: {},
-				loading: false,
 				error: error.message
 			}
 		};

@@ -16,10 +16,6 @@
 		let startOffset = container.offsetTop;
 		let windowHeight = window.innerHeight;
 
-		console.log('H: ' + sectionHeight);
-		console.log('O: ' + startOffset);
-		console.log('W: ' + windowHeight);
-
 		const updateScroll = () => {
 			const scrollY = window.scrollY;
 			if (scrollY + windowHeight > startOffset && scrollY < startOffset + sectionHeight) {

@@ -2,19 +2,19 @@
 	import Category from '../../components/Category.svelte';
 
 	export let data;
-	const { carte, loading, error } = data.props;
-
-	function oui() {
-		console.log(loading);
-	}
+	const { carte, error } = data.props;
 </script>
 
 <main class="chalk-background">
 	<div class="container deep-1">
 		<h1 class="gradient-text">Notre carte</h1>
-		{#each Object.keys(carte['Menu'] || []) as category}
-			<Category {category} items={carte['Menu'][category]} />
-		{/each}
+		{#if error !== undefined}
+			<h2>{error}</h2>
+		{:else}
+			{#each Object.keys(carte['Menu'] || []) as category}
+				<Category {category} items={carte['Menu'][category]} />
+			{/each}
+		{/if}
 	</div>
 </main>
 
