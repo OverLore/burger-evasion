@@ -55,6 +55,7 @@
 		font-size: 1rem;
 		color: #161616;
 		font-weight: bold;
+		text-align: center;
 	}
 
 	.review-date {
@@ -85,5 +86,22 @@
 		border-radius: 50%;
 		object-fit: cover;
 		margin-top: 1rem;
+	}
+
+	@media screen and (max-width: 750px) {
+		.review-card {
+			border-radius: 1rem;
+		}
+
+		.review-text {
+			font-size: 0.8rem;
+			margin-top: 4px;
+			font-weight: 500;
+			text-align: center;
+		}
+
+		.star {
+			font-size: 1.5rem;
+		}
 	}
 </style>

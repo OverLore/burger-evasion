@@ -128,7 +128,10 @@
 <main>
 	<div class="main-container">
 		<section class="main-section deep-1">
-			<img src="section1burger.webp" alt="Burger au boeuf" />
+			<picture>
+				<source media="(max-width: 1090px)" srcset="section1burgersmall.webp" />
+				<img src="section1burger.webp" alt="Burger au boeuf" />
+			</picture>
 			<div class="main-text-grid">
 				<div>
 					<h1 class="title">
@@ -1063,6 +1066,796 @@
 			height: 3rem;
 			line-height: 3rem;
 			font-size: 2rem;
+		}
+	}
+
+	@media screen and (max-width: 1090px) {
+		.main-section {
+			margin-top: 8rem;
+		}
+
+		.main-section img {
+			position: fixed;
+			top: auto;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100vw;
+			height: 100svh;
+			object-fit: cover;
+			z-index: -1;
+		}
+
+		.main-text-grid {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.subtitle {
+			margin-top: 1rem;
+			font-weight: 300;
+			font-size: 1.25rem;
+		}
+
+		.burger-name {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.burger-description {
+			margin-top: 1rem;
+			font-weight: 500;
+			font-size: 1.25rem;
+			text-wrap: balance;
+		}
+
+		.underline {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			position: relative;
+			width: fit-content;
+			font-family: var(--ulagadi-bold);
+		}
+
+		.underline::after {
+			bottom: -1.9rem;
+			right: -4.5rem;
+			transform: scale(0.7);
+		}
+
+		.btn {
+			padding: 10px 35px;
+			font-size: 1.25rem;
+			border-radius: 15px;
+			margin-top: 2rem;
+		}
+
+		.chicken {
+			font-size: 3rem;
+		}
+
+		.chicken::after {
+			top: -2.8rem;
+			right: -2.45rem;
+			transform: scale(0.7);
+		}
+
+		.chicken-burger-section {
+			margin-top: 4rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.chicken-burger-section .main-text-grid {
+			height: auto;
+			order: 0;
+		}
+
+		.chicken-burger-image {
+			height: auto;
+			position: initial;
+			width: 140%;
+			order: 1;
+			margin-left: -20%;
+			margin-top: -10%;
+		}
+
+		.beef {
+			font-size: 3rem;
+		}
+
+		.beef::before {
+			top: -2.5rem;
+			left: -2.55rem;
+			transform: scale(0.7);
+		}
+
+		.beef-burger-section {
+			margin-top: 8rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.beef-burger-section .main-text-grid {
+			height: auto;
+			order: 0;
+		}
+
+		.beef-burger-image {
+			height: auto;
+			position: initial;
+			width: 140%;
+			order: 1;
+			margin-left: -20%;
+			margin-top: -10%;
+		}
+
+		.black {
+			font-size: 3rem;
+		}
+
+		.black::after {
+			top: -2.75rem;
+			right: -2.35rem;
+			transform: scale(0.7);
+		}
+
+		.black-burger-section {
+			margin-top: 8rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.black-burger-section .main-text-grid {
+			height: auto;
+			order: 0;
+		}
+
+		.black-burger-image {
+			height: auto;
+			position: initial;
+			width: 140%;
+			order: 1;
+			margin-left: -20%;
+			margin-top: -10%;
+		}
+
+		.feedback-section {
+			margin-top: 8rem;
+		}
+
+		.feedback-list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: start;
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			gap: 2rem;
+		}
+
+		.feedback-section h2 {
+			font-size: 3.5rem;
+		}
+
+		.map-container iframe {
+			width: 560px;
+			height: 315px;
+		}
+
+		.map-section h2 {
+			font-size: 3.5rem;
+		}
+
+		.faq-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.faq-question {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.faq-section h2 {
+			font-size: 2.5rem;
+		}
+
+		.faq-question h3 {
+			font-size: 1.15rem;
+			padding-right: 1rem;
+		}
+
+		.faq-question p {
+			font-size: 1rem;
+		}
+
+		.faq-answer p {
+			font-size: 1rem;
+		}
+
+		.faq-title h2 {
+			font-size: 3rem;
+		}
+
+		.faq-title p {
+			font-size: 1rem;
+			margin-top: 1.5rem;
+		}
+
+		.newsletter-section h2 {
+			font-size: 2.5rem;
+		}
+
+		.newsletter-container {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.newsletter-container h2 {
+			font-size: 3rem;
+		}
+
+		.newsletter-container h3 {
+			font-size: 1.5rem;
+			margin-top: 1rem;
+		}
+
+		.newsletter-container p {
+			font-size: 0.75rem;
+		}
+
+		.newsletter-mail-container {
+			grid-column-gap: 0.75rem;
+			grid-row-gap: 0.75rem;
+			margin-top: 2.5rem;
+		}
+
+		.social-list li a {
+			width: 3rem;
+			height: 3rem;
+			line-height: 3rem;
+			font-size: 2rem;
+		}
+	}
+
+	@media screen and (max-width: 750px) {
+		.main-section {
+			margin-top: 7rem;
+		}
+
+		.main-section img {
+			position: fixed;
+			top: auto;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100vw;
+			height: 100svh;
+			object-fit: cover;
+			z-index: -1;
+		}
+
+		.main-text-grid {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.subtitle {
+			margin-top: 1rem;
+			font-weight: 300;
+			font-size: 1.25rem;
+		}
+
+		.burger-name {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.burger-description {
+			margin-top: 1rem;
+			font-weight: 500;
+			font-size: 1.25rem;
+			text-wrap: balance;
+		}
+
+		.underline {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			position: relative;
+			width: fit-content;
+			font-family: var(--ulagadi-bold);
+		}
+
+		.underline::after {
+			bottom: -1.9rem;
+			right: -4.5rem;
+			transform: scale(0.7);
+		}
+
+		.btn {
+			padding: 10px 35px;
+			font-size: 1.25rem;
+			border-radius: 15px;
+			margin-top: 2rem;
+		}
+
+		.chicken {
+			font-size: 3rem;
+		}
+
+		.chicken::after {
+			top: -2.8rem;
+			right: -2.45rem;
+			transform: scale(0.7);
+		}
+
+		.chicken-burger-section {
+			margin-top: 4rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.chicken-burger-section .main-text-grid {
+			height: auto;
+			order: 0;
+		}
+
+		.chicken-burger-image {
+			height: auto;
+			position: initial;
+			width: 140%;
+			order: 1;
+			margin-left: -20%;
+			margin-top: -10%;
+		}
+
+		.beef {
+			font-size: 3rem;
+		}
+
+		.beef::before {
+			top: -2.5rem;
+			left: -2.55rem;
+			transform: scale(0.7);
+		}
+
+		.beef-burger-section {
+			margin-top: 3rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.beef-burger-section .main-text-grid {
+			height: auto;
+			order: 0;
+		}
+
+		.beef-burger-image {
+			height: auto;
+			position: initial;
+			width: 140%;
+			order: 1;
+			margin-left: -20%;
+			margin-top: -10%;
+		}
+
+		.black {
+			font-size: 3rem;
+		}
+
+		.black::after {
+			top: -2.75rem;
+			right: -2.35rem;
+			transform: scale(0.7);
+		}
+
+		.black-burger-section {
+			margin-top: 3rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.black-burger-section .main-text-grid {
+			height: auto;
+			order: 0;
+		}
+
+		.black-burger-image {
+			height: auto;
+			position: initial;
+			width: 140%;
+			order: 1;
+			margin-left: -20%;
+			margin-top: -10%;
+		}
+
+		.feedback-section {
+			margin-top: 8rem;
+		}
+
+		.feedback-list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: start;
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			gap: 2rem;
+		}
+
+		.feedback-section h2 {
+			font-size: 3.2rem;
+		}
+
+		.map-container iframe {
+			width: 480px;
+			height: 290px;
+		}
+
+		.map-section h2 {
+			font-size: 3.5rem;
+		}
+
+		.faq-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.faq-question {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.faq-section h2 {
+			font-size: 2.5rem;
+		}
+
+		.faq-question h3 {
+			font-size: 1.15rem;
+			padding-right: 1rem;
+		}
+
+		.faq-question p {
+			font-size: 1rem;
+		}
+
+		.faq-answer p {
+			font-size: 1rem;
+		}
+
+		.faq-title h2 {
+			font-size: 3rem;
+		}
+
+		.faq-title p {
+			font-size: 1rem;
+			margin-top: 1.5rem;
+		}
+
+		.newsletter-section h2 {
+			font-size: 2.5rem;
+		}
+
+		.newsletter-container {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.newsletter-container h2 {
+			font-size: 3rem;
+		}
+
+		.newsletter-container h3 {
+			font-size: 1.5rem;
+			margin-top: 1rem;
+		}
+
+		.newsletter-container p {
+			font-size: 0.75rem;
+		}
+
+		.newsletter-mail-container {
+			grid-column-gap: 0.75rem;
+			grid-row-gap: 0.75rem;
+			margin-top: 2.5rem;
+		}
+
+		.social-list li a {
+			width: 3rem;
+			height: 3rem;
+			line-height: 3rem;
+			font-size: 2rem;
+		}
+	}
+
+	@media screen and (max-width: 570px) {
+		.main-section {
+			margin-top: 7rem;
+		}
+
+		.main-section img {
+			position: fixed;
+			top: auto;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100vw;
+			height: 100svh;
+			object-fit: cover;
+			z-index: -1;
+		}
+
+		.main-text-grid {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+		}
+
+		.title {
+			font-size: 2.15rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.subtitle {
+			margin-top: 1rem;
+			font-weight: normal;
+			font-size: 1.1rem;
+		}
+
+		.burger-name {
+			font-size: 3rem;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.burger-description {
+			margin-top: 1rem;
+			font-weight: normal;
+			font-size: 1rem;
+			text-wrap: balance;
+		}
+
+		.underline {
+			font-size: 2.15rem;
+			text-transform: uppercase;
+			position: relative;
+			width: fit-content;
+			font-family: var(--ulagadi-bold);
+		}
+
+		.underline::after {
+			bottom: -1.5rem;
+			right: -6.75rem;
+			transform: scale(0.5);
+		}
+
+		.btn {
+			padding: 8px 16px;
+			font-size: 1rem;
+			border-radius: 15px;
+			margin-top: 1.5rem;
+		}
+
+		.chicken {
+			font-size: 3rem;
+		}
+
+		.chicken::after {
+			top: -2.8rem;
+			right: -2.45rem;
+			transform: scale(0.7);
+		}
+
+		.chicken-burger-section {
+			margin-top: 4rem;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.chicken-burger-section .main-text-grid {
+			height: auto;
+			order: 0;
+		}
+
+		.chicken-burger-image {
+			height: auto;
+			position: initial;
+			width: 140%;
+			order: 1;
+			margin-left: -20%;
+			margin-top: 0;
+		}
+
+		.beef {
+			font-size: 3rem;
+		}
+
+		.beef::before {
+			top: -2.5rem;
+			left: -2.55rem;
+			transform: scale(0.7);
+		}
+
+		.beef-burger-section {
+			margin-top: 5rem;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.beef-burger-section .main-text-grid {
+			height: auto;
+			order: 0;
+		}
+
+		.beef-burger-image {
+			height: auto;
+			position: initial;
+			width: 140%;
+			order: 1;
+			margin-left: -20%;
+			margin-top: 0;
+		}
+
+		.black {
+			font-size: 3rem;
+		}
+
+		.black::after {
+			top: -2.75rem;
+			right: -2.35rem;
+			transform: scale(0.7);
+		}
+
+		.black-burger-section {
+			margin-top: 5rem;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.black-burger-section .main-text-grid {
+			height: auto;
+			order: 0;
+		}
+
+		.black-burger-image {
+			height: auto;
+			position: initial;
+			width: 140%;
+			order: 1;
+			margin-left: -20%;
+			margin-top: 0;
+		}
+
+		.feedback-section {
+			margin-top: 2rem;
+		}
+
+		.feedback-list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: start;
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			gap: 2rem;
+		}
+
+		.feedback-section h2 {
+			font-size: 3rem;
+		}
+
+		.map-container iframe {
+			width: 480px;
+			height: 290px;
+		}
+
+		.map-section h2 {
+			font-size: 3rem;
+		}
+
+		.faq-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.faq-question {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+		}
+
+		.faq-section h2 {
+			font-size: 2.5rem;
+		}
+
+		.faq-question h3 {
+			font-size: 1.15rem;
+			padding-right: 1rem;
+		}
+
+		.faq-question p {
+			font-size: 1rem;
+		}
+
+		.faq-answer p {
+			font-size: 1rem;
+		}
+
+		.faq-title h2 {
+			font-size: 3rem;
+		}
+
+		.faq-title p {
+			font-size: 1rem;
+			margin-top: 1.5rem;
+		}
+
+		.email-field {
+			border-radius: 0.4rem;
+			margin-bottom: 0.75rem;
+			padding: 0 0.25rem;
+			font-size: 1rem;
+			height: 2.15rem;
+		}
+
+		.email-submit {
+			padding: 0.25rem 0.25rem;
+		}
+
+		.newsletter-section h2 {
+			font-size: 2.5rem;
+		}
+
+		.newsletter-container {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.newsletter-container h2 {
+			font-size: 3rem;
+		}
+
+		.newsletter-container h3 {
+			font-size: 1.5rem;
+			margin-top: 1rem;
+		}
+
+		.newsletter-container p {
+			font-size: 0.75rem;
+		}
+
+		.newsletter-mail-container {
+			grid-column-gap: 0.75rem;
+			grid-row-gap: 0.75rem;
+			margin-top: 2.5rem;
+			width: 90%;
+		}
+
+		.social-list li a {
+			width: 3rem;
+			height: 3rem;
+			line-height: 3rem;
+			font-size: 2rem;
+			margin: 0 10px;
 		}
 	}
 </style>

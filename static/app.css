@@ -36,13 +36,13 @@ body {
 }
 
 .deep-1 {
-	max-width: 100rem;
-	padding-inline: 5rem;
+	max-width: 100vw;
+	padding-inline: 15rem;
 }
 
 .deep-2 {
-	max-width: 65rem;
-	padding-inline: 5rem;
+	max-width: 100vw;
+	padding-inline: 20rem;
 }
 
 .gradient-text {
@@ -115,4 +115,52 @@ h5,
 h6 {
 	font-display: swap;
 	font-family: var(--ulagadi-bold);
+}
+
+@media screen and (max-width: 1920px) {
+	.deep-1 {
+		max-width: 100rem;
+		padding-inline: 5rem;
+	}
+
+	.deep-2 {
+		max-width: 65rem;
+		padding-inline: 5rem;
+	}
+}
+
+@media screen and (max-width: 1090px) {
+	.deep-1 {
+		max-width: 700px;
+		padding-inline: 0;
+	}
+
+	.deep-2 {
+		max-width: 600px;
+		padding-inline: 0;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.deep-1 {
+		max-width: 500px;
+		padding-inline: 0;
+	}
+
+	.deep-2 {
+		max-width: 450px;
+		padding-inline: 0;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.deep-1 {
+		max-width: 100vw;
+		padding-inline: 1.5rem;
+	}
+
+	.deep-2 {
+		max-width: 100vw;
+		padding-inline: 2rem;
+	}
 }

@@ -11,7 +11,7 @@
 					class="logo-container-line"
 				></div>
 				<p>
-					Burger Evsaion est un restaurant fictif. Le présent site sur lequel vous naviguez est la
+					Burger Evasion est un restaurant fictif. Le présent site sur lequel vous naviguez est la
 					vitrine fictive d'un restaurant n'existant pas, réalisé à des fins d'exercice personnel
 					par <a
 						class="author-link"
@@ -191,5 +191,28 @@
 
 	.legal-content a {
 		color: gray;
+	}
+
+	@media (max-width: 600px) {
+		.content {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto auto;
+		}
+
+		.social-container {
+			align-items: flex-end;
+			justify-content: flex-end;
+			width: 100%;
+		}
+
+		.links-container {
+			align-items: start;
+			justify-content: start;
+			width: 100%;
+		}
+
+		.logo-container {
+			grid-column: 1 / -1;
+		}
 	}
 </style>
