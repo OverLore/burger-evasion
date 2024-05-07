@@ -141,17 +141,14 @@
 						Découvrez des burgers révolutionnaires, avec leur viande juteuse et succulente. Goûtez à
 						notre redéfinition de ce classique culinaire d'une manière inédite et inoubliable.
 					</h2>
-					<a aria-label="Consulter la carte" href="/carte" class="btn btn-primary">
-						Consulter la carte
-					</a>
-					<a
-						aria-label="Nous trouver géographiquement"
-						href="/#map"
-						class="btn btn-secondary"
-						style="margin-left: 1rem;"
-					>
-						Nous trouver
-					</a>
+					<div class="btns">
+						<a aria-label="Consulter la carte" href="/carte" class="btn btn-primary">
+							Consulter la carte
+						</a>
+						<a aria-label="Nous trouver géographiquement" href="/#map" class="btn btn-secondary">
+							Nous trouver
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -380,6 +377,12 @@
 		flex-direction: column;
 		align-items: center;
 		overflow: hidden;
+	}
+
+	.btns {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
 	}
 
 	.content {
@@ -1856,6 +1859,12 @@
 			line-height: 3rem;
 			font-size: 2rem;
 			margin: 0 10px;
+		}
+	}
+
+	@media screen and (max-width: 373px) {
+		.btns {
+			justify-content: center;
 		}
 	}
 </style>

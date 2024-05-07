@@ -1,29 +1,23 @@
 <main class="chalk-background">
 	<div class="container deep-1">
 		<h1 class="gradient-text">Il est grand temps<br />que nous nous présentions.</h1>
-		<div style="margin-left: 25rem; margin-right: 25rem;">
+		<div class="subtitle-container">
 			<h2 class="subtitle">
 				Burger Evasion est une expérience unique où vous êtes invité à redécouvrir ce classique
 				culinaire qu'est le burger.
 			</h2>
 		</div>
-		<div style="align-self: center;">
+		<div
+			style="align-self: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 3rem;"
+		>
 			<a aria-label="Consulter la carte" href="/carte" class="btn btn-primary">
 				Consulter la carte
 			</a>
-			<a
-				aria-label="Nous trouver géographiquement"
-				href="/carte"
-				class="btn btn-secondary"
-				style="margin-left: 1rem;"
-			>
+			<a aria-label="Nous trouver géographiquement" href="/carte" class="btn btn-secondary">
 				Nous trouver
 			</a>
 		</div>
-		<div
-			class="negative-anchor"
-			style="align-self: center;margin-left: 15rem; margin-right: 15rem; margin-top:10rem;"
-		>
+		<div class="negative-anchor">
 			<img class="team" src="team.webp" alt="Personnel de Burger Évasion" />
 		</div>
 		<div class="horizontal" style="margin-top: 8rem;">
@@ -51,7 +45,7 @@
 				redécouverte totale
 			</span><br />du burger.
 		</h2>
-		<div class="anchor" style="margin-top: 6rem; margin-left: 5rem; margin-right: 5rem;">
+		<div class="anchor">
 			<div class="horizontal">
 				<div class="horizontal-content-wide">
 					<h2 class="title" style="text-align: left;">En pleine ascention</h2>
@@ -92,6 +86,11 @@
 		align-items: center;
 	}
 
+	.subtitle-container {
+		max-width: 60rem;
+		align-self: center;
+	}
+
 	.team {
 		max-width: 100%;
 		height: auto;
@@ -126,6 +125,9 @@
 	.anchor {
 		position: relative;
 		width: fit-content;
+		margin-top: 6rem;
+		margin-left: 5rem;
+		margin-right: 5rem;
 	}
 
 	.anchor::before {
@@ -152,6 +154,10 @@
 	.negative-anchor {
 		position: relative;
 		width: fit-content;
+		align-self: center;
+		margin-left: 10rem;
+		margin-right: 10rem;
+		margin-top: 10rem;
 	}
 
 	.negative-anchor::before {
@@ -223,5 +229,190 @@
 
 	a {
 		color: var(--primary);
+	}
+
+	.btn {
+		margin-top: 0;
+	}
+
+	@media screen and (max-width: 1300px) {
+		h1 {
+			font-size: 3rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+		}
+
+		.subtitle-container {
+			max-width: 45rem;
+			align-self: center;
+		}
+
+		.horizontal-content-small-s {
+			flex: 0 0 auto;
+			width: 43%;
+		}
+
+		.negative-anchor {
+			margin-left: 10rem;
+			margin-right: 10rem;
+			margin-top: 10rem;
+		}
+
+		.anchor {
+			margin-left: 4rem;
+			margin-right: 4rem;
+		}
+
+		.anchor::before {
+			top: -2rem;
+			left: -3rem;
+			transform: scale(0.75);
+		}
+
+		.anchor::after {
+			bottom: -2rem;
+			right: -3rem;
+			transform: scale(-0.75);
+		}
+	}
+
+	@media screen and (max-width: 1090px) {
+		.subtitle-container {
+			max-width: 35rem;
+			align-self: center;
+		}
+
+		.horizontal-content-small-s {
+			flex: 0 0 auto;
+			width: 80%;
+		}
+
+		.horizontal-content-wide-s {
+			flex: 0 0 auto;
+			width: 100%;
+		}
+
+		.horizontal-content-wide {
+			flex: 0 0 auto;
+			width: 100%;
+		}
+
+		.negative-anchor {
+			margin-left: auto;
+			margin-right: auto;
+			width: 550px;
+			margin-top: 10rem;
+		}
+
+		.horizontal {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			gap: 3rem;
+		}
+
+		.divider-text {
+			font-size: 3rem;
+		}
+
+		.anchor {
+			margin-left: 3rem;
+			margin-right: 3rem;
+		}
+	}
+
+	@media screen and (max-width: 750px) {
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.subtitle {
+			font-size: 1.15rem;
+		}
+
+		.subtitle-container {
+			max-width: 35rem;
+			align-self: center;
+		}
+
+		.horizontal-content-small-s {
+			flex: 0 0 auto;
+			width: 80%;
+		}
+
+		.horizontal-content-wide-s {
+			flex: 0 0 auto;
+			width: 100%;
+		}
+
+		.horizontal-content-wide {
+			flex: 0 0 auto;
+			width: 100%;
+		}
+
+		.negative-anchor {
+			margin-left: auto;
+			margin-right: auto;
+			width: 400px;
+			margin-top: 5rem;
+		}
+
+		.horizontal {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			gap: 3rem;
+		}
+
+		.divider-text {
+			font-size: 2rem;
+		}
+
+		.btn {
+			padding: 10px 35px;
+			font-size: 1.25rem;
+			border-radius: 15px;
+			margin-top: 2rem;
+		}
+
+		.anchor {
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+	}
+
+	@media screen and (max-width: 550px) {
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.title {
+			font-size: 2rem;
+		}
+
+		.subtitle {
+			font-size: 1.15rem;
+		}
+
+		.divider-text {
+			font-size: 1.5rem;
+		}
+
+		.btn {
+			padding: 10px 35px;
+			font-size: 1.25rem;
+			border-radius: 15px;
+			margin-top: 2rem;
+		}
+
+		.negative-anchor {
+			margin-left: 2rem;
+			margin-right: 2rem;
+			width: auto;
+		}
 	}
 </style>
