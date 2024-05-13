@@ -1,3 +1,15 @@
+<svelte:head>
+	<title>Burger Evasion - A propos</title>
+	<meta
+		name="description"
+		content="Qui sommes-nous ? Quelles sont nos valeurs ? Découvrez nos engagements."
+	/>
+	<meta
+		name="robots"
+		content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+	/>
+</svelte:head>
+
 <main class="chalk-background">
 	<div class="container deep-1">
 		<h1 class="gradient-text">Il est grand temps<br />que nous nous présentions.</h1>

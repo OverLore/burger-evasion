@@ -5,6 +5,15 @@
 	const { carte, error } = data.props;
 </script>
 
+<svelte:head>
+	<title>Burger Evasion - Notre carte</title>
+	<meta name="description" content="Découvrez notre carte. Formule complète, menu enfant..." />
+	<meta
+		name="robots"
+		content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+	/>
+</svelte:head>
+
 <main class="chalk-background">
 	<div class="container deep-1">
 		<h1 class="gradient-text">Notre carte</h1>

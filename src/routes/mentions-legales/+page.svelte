@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Burger Evasion - Mentions légales</title>
+</svelte:head>
+
 <main class="chalk-background">
 	<div class="container deep-1">
 		<h1 class="gradient-text">MENTIONS LÉGALES</h1>

@@ -1362,7 +1362,7 @@
 		.subtitle {
 			margin-top: 1rem;
 			font-weight: 300;
-			font-size: 1.25rem;
+			font-size: 1rem;
 		}
 
 		.burger-name {
@@ -1620,7 +1620,7 @@
 		.subtitle {
 			margin-top: 1rem;
 			font-weight: normal;
-			font-size: 1.1rem;
+			font-size: 1rem;
 		}
 
 		.burger-name {

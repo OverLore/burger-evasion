@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Burger Evasion - Erreur 404</title>
+</svelte:head>
+
 <main class="chalk-background">
 	<div class="main-container">
 		<div class="content">
